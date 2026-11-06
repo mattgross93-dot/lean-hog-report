@@ -1,7 +1,7 @@
 {
-  "REPORT_DATE": "2026-11-05",
+  "REPORT_DATE": "2026-11-06",
   "FX_USDCAD": 1.385,
-  "FX_ASOF": "2026-11-05 (approx.)",
+  "FX_ASOF": "2026-11-05 (approx., carried forward)",
   "NEGOTIATED": {
     "asof": "2026-11-04",
     "src": "LM_HG218",
@@ -32,11 +32,11 @@
     ]
   },
   "PRODUCER_ALL": {
-    "asof": "2026-11-03",
+    "asof": "2026-11-05",
     "src": "LM_HG201",
-    "value": 66.15,
-    "net": null,
-    "head": 235706,
+    "value": 64.95,
+    "net": 66.23,
+    "head": 236348,
     "series": [
       [
         "Oct 23",
@@ -49,6 +49,14 @@
       [
         "Nov 3",
         66.15
+      ],
+      [
+        "Nov 4",
+        66.24
+      ],
+      [
+        "Nov 5",
+        64.95
       ]
     ]
   },
@@ -77,13 +85,13 @@
     ]
   },
   "CUTOUT": {
-    "asof": "2026-11-03",
+    "asof": "2026-11-05",
     "src": "LM_PK602",
-    "value": 72.43,
-    "prior": 72.28,
-    "chg": 0.15,
-    "loads": 283.61,
-    "loads_prior": 310.84,
+    "value": 68.99,
+    "prior": 69.29,
+    "chg": -0.3,
+    "loads": 342.55,
+    "loads_prior": 306.42,
     "series": [
       [
         "Nov 2",
@@ -92,38 +100,46 @@
       [
         "Nov 3",
         72.43
+      ],
+      [
+        "Nov 4",
+        69.29
+      ],
+      [
+        "Nov 5",
+        68.99
       ]
     ],
     "primals": [
       [
         "Loin",
-        74.64,
-        75.65
+        73.31,
+        73.5
       ],
       [
         "Butt",
-        94.73,
-        95.5
+        94.18,
+        92.38
       ],
       [
         "Picnic",
-        57.92,
-        51.76
+        52.99,
+        49.98
       ],
       [
         "Rib",
-        125.15,
-        134.5
+        129.02,
+        124.27
       ],
       [
         "Ham",
-        64.3,
-        64.43
+        60.98,
+        62.64
       ],
       [
         "Belly",
-        75.96,
-        74.12
+        63.76,
+        67.35
       ]
     ]
   },
@@ -200,11 +216,11 @@
     ]
   },
   "FEED": {
-    "asof": "2026-11-04",
+    "asof": "2026-11-06",
     "src": "CBOT",
     "corn": {
-      "value": 4.4425,
-      "prior": 4.425,
+      "value": 4.415,
+      "prior": 4.4,
       "contract": "Dec 26",
       "series": [
         [
@@ -218,12 +234,20 @@
         [
           "Nov 4",
           4.4425
+        ],
+        [
+          "Nov 5",
+          4.4
+        ],
+        [
+          "Nov 6",
+          4.415
         ]
       ]
     },
     "sbm": {
-      "value": 318.6,
-      "prior": 318.0,
+      "value": 319.2,
+      "prior": 317.2,
       "contract": "Dec 26",
       "series": [
         [
@@ -237,6 +261,14 @@
         [
           "Nov 4",
           318.6
+        ],
+        [
+          "Nov 5",
+          317.2
+        ],
+        [
+          "Nov 6",
+          319.2
         ]
       ]
     },
@@ -251,15 +283,15 @@
     }
   },
   "SLAUGHTER": {
-    "asof": "2026-10-23",
+    "asof": "2026-11-06",
     "src": "SJ_LS710",
-    "today_est": 462000,
+    "today_est": 485000,
     "sat_est": 202000,
-    "week_ago_est": 472000,
-    "year_ago_act": 458593,
-    "wtd_est": 2413000,
-    "wtd_prior_week": 2443000,
-    "wtd_year_ago": 2393263,
+    "week_ago_est": 486000,
+    "year_ago_act": 470840,
+    "wtd_est": 2452000,
+    "wtd_prior_week": 2418000,
+    "wtd_year_ago": 2410676,
     "sched_peak": [
       465110,
       "2026-11-03"
@@ -437,24 +469,24 @@
     "share_of_production_pct": "25-30"
   },
   "COT": {
-    "asof": "2026-10-27",
+    "asof": "2026-11-03",
     "src": "CFTC",
-    "released": "2026-10-30",
-    "next_release": "2026-11-06",
-    "mm_long": 71391,
-    "mm_short": 123037,
-    "mm_net": -51646,
-    "mm_net_prior": -56479,
-    "large_spec_net": -82361,
-    "futopt_net_reported": -47109,
-    "futopt_wow": -5976,
-    "cme_index": 67.3,
-    "cme_index_asof": "2026-10-28",
+    "released": "2026-11-06",
+    "next_release": "2026-11-13",
+    "mm_long": 70680,
+    "mm_short": 129752,
+    "mm_net": -59072,
+    "mm_net_prior": -51646,
+    "large_spec_net": -81035,
+    "futopt_net_reported": -50500,
+    "futopt_wow": -3400,
+    "cme_index": 63.93,
+    "cme_index_asof": "2026-11-03",
     "contract_lb": 40000,
-    "pct_rank_note": "Managed money net position sits above only ~1% of the last 156 weeks."
+    "pct_rank_note": "Managed money net short widened to 59,072 contracts, the largest in at least five years; futures open interest rose 17,159 on the week to 324,455."
   },
   "FUTURES": {
-    "asof": "2026-11-05",
+    "asof": "2026-11-06",
     "src": "CME",
     "contracts": [
       "Dec 26 (HEZ26)",
@@ -468,25 +500,25 @@
     ],
     "latest": {
       "Dec 26": {
-        "px": 55.1,
-        "chg": -2.45,
-        "pct": -4.26,
-        "oi": 145427,
-        "vol": 41870,
-        "lo": 54.225,
-        "hi": 56.825
+        "px": 53.525,
+        "chg": -1.575,
+        "pct": -2.86,
+        "oi": 142351,
+        "vol": 25849,
+        "lo": 53.175,
+        "hi": 55.125
       },
       "Feb 27": {
-        "px": 60.18,
-        "chg": -2.13,
-        "pct": -3.41,
-        "oi": 76937
+        "px": 58.7,
+        "chg": -1.475,
+        "pct": -2.45,
+        "oi": 77233
       },
       "Apr 27": {
-        "px": 67.13,
-        "chg": -1.2,
-        "pct": -1.76,
-        "oi": 46839
+        "px": 66.5,
+        "chg": -0.625,
+        "pct": -0.93,
+        "oi": 47408
       }
     },
     "curve": {
@@ -518,6 +550,17 @@
         "Apr 27": 67.13,
         "May 27": 73.98,
         "Jun 27": 83.05
+      },
+      "2026-11-06": {
+        "Dec 26": 53.525,
+        "Feb 27": 58.7,
+        "Apr 27": 66.5,
+        "May 27": 73.93,
+        "Jun 27": 82.85,
+        "Jul 27": 85.93,
+        "Aug 27": 86.78,
+        "Oct 27": 76.28,
+        "Dec 27": 69.83
       }
     },
     "dec26": [
@@ -570,6 +613,11 @@
         "2026-11-05",
         55.1,
         false
+      ],
+      [
+        "2026-11-06",
+        53.525,
+        false
       ]
     ],
     "feb27": [
@@ -602,6 +650,11 @@
         "2026-11-05",
         60.18,
         false
+      ],
+      [
+        "2026-11-06",
+        58.7,
+        false
       ]
     ],
     "apr27": [
@@ -623,6 +676,11 @@
       [
         "2026-11-05",
         67.13,
+        false
+      ],
+      [
+        "2026-11-06",
+        66.5,
         false
       ]
     ],
@@ -718,10 +776,10 @@
     ],
     "perf": {
       "Dec 26": {
-        "1d": -4.26,
-        "1w": -5.97,
-        "ytd": -35.25,
-        "1y": -31.06
+        "1d": -2.86,
+        "1w": -9.09,
+        "ytd": -37.1,
+        "1y": -33.03
       }
     },
     "min_sessions": {
@@ -743,10 +801,18 @@
       [
         "2026-10-29",
         68.3
+      ],
+      [
+        "2026-11-02",
+        64.99
+      ],
+      [
+        "2026-11-03",
+        63.93
       ]
     ],
-    "latest": 68.3,
-    "latest_asof": "2026-10-29",
+    "latest": 63.93,
+    "latest_asof": "2026-11-03",
     "note": "lowest since January 2024"
   },
   "CUTOUT_EXTRA": [
@@ -765,6 +831,14 @@
     [
       "2026-11-03",
       72.43
+    ],
+    [
+      "2026-11-04",
+      69.29
+    ],
+    [
+      "2026-11-05",
+      68.99
     ]
   ]
 }
