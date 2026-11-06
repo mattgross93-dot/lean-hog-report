@@ -197,7 +197,7 @@ def _dir_color(cur, prev):
 
 def _save(fig, name):
     path = f"{OUT}/{name}.png"
-    fig.savefig(path, dpi=200, bbox_inches="tight", pad_inches=0.12)
+    fig.savefig(path, dpi=int(__import__("os").environ.get("CHART_DPI", 150)), bbox_inches="tight", pad_inches=0.12)
     plt.close(fig)
     return path
 
