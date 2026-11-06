@@ -1,0 +1,6 @@
+__pycache__/
+*.pyc
+charts/
+US_Lean_Hog_Market_Report.pdf
+run_status.json
+pg-*.png
