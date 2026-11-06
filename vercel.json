@@ -1,0 +1,9 @@
+{
+  "cleanUrls": false,
+  "headers": [
+    {
+      "source": "/US_Lean_Hog_Market_Report.pdf",
+      "headers": [{ "key": "Content-Type", "value": "application/pdf" }]
+    }
+  ]
+}
