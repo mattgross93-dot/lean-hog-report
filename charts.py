@@ -254,7 +254,20 @@ def price_divergence():
 # ------------------------------------------------------------------ 2
 def purchase_mix():
     rows = D.PURCHASE_TYPES["rows"]
-    labels = ["Negotiated", "Swine/pork\nmkt formula", "Other purchase\narrangement"]
+    _WRAP = {
+        "Negotiated": "Negotiated",
+        "Other market formula": "Other market\nformula",
+        "Swine or pork mkt formula": "Swine/pork\nmkt formula",
+        "Other purchase arrangement": "Other purchase\narrangement",
+    }
+    _SHORT = {
+        "Negotiated": "Neg.",
+        "Other market formula": "OMF",
+        "Swine or pork mkt formula": "SPMF",
+        "Other purchase arrangement": "OPA",
+    }
+    labels = [_WRAP.get(r[0], r[0]) for r in rows]
+    shorts = [_SHORT.get(r[0], r[0][:5]) for r in rows]
     heads = [r[1] for r in rows]
     prices = [r[2] for r in rows]
     total = sum(heads)
@@ -263,7 +276,8 @@ def purchase_mix():
                                  gridspec_kw={"width_ratios": [1.5, 1],
                                               "wspace": 0.55})
 
-    cols = [DOWN, BLUE, TEAL]
+    _pal = [DOWN, BLUE, TEAL, AXIS]
+    cols = [_pal[i % len(_pal)] for i in range(len(rows))]
 
     y = list(range(len(labels)))
     a1.set_ylim(-0.7, len(labels) - 0.3)
@@ -290,7 +304,7 @@ def purchase_mix():
     a2.set_ylim(0, max(prices) * 1.32)
     vbars(a2, list(range(len(prices))), prices, 0.48, cols)
     a2.set_xticks(list(range(len(prices))))
-    a2.set_xticklabels(["Neg.", "SPMF", "OPA"])
+    a2.set_xticklabels(shorts)
     a2.set_ylabel("$/cwt")
     a2.set_title("Base price paid", pad=10)
     for i, p in enumerate(prices):

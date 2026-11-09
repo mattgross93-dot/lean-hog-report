@@ -7,6 +7,7 @@ from reportlab.lib.enums import TA_LEFT, TA_RIGHT, TA_CENTER
 from reportlab.platypus import (BaseDocTemplate, PageTemplate, Frame, Paragraph,
                                 Spacer, Table, TableStyle, Image, KeepTogether,
                                 PageBreak, Flowable)
+import os
 import data as D
 import charts as C
 import pi as PI
@@ -32,7 +33,58 @@ CARDLN = colors.HexColor("#dde3e8")
 WARN = colors.HexColor("#e9f1f9")
 WARNLN = colors.HexColor("#3f7cab")
 
-OUT = "/home/claude/hogreport/US_Lean_Hog_Market_Report.pdf"
+OUT = os.path.join(os.path.dirname(os.path.abspath(__file__)),
+                   "US_Lean_Hog_Market_Report.pdf")
+
+
+def _fmt_day(asof):
+    """'2026-11-06' -> 'Nov 6'. Returns the input unchanged if unparseable."""
+    try:
+        return _dt.date.fromisoformat(str(asof)[:10]).strftime("%b %-d")
+    except Exception:
+        return str(asof)
+
+
+def _fmt_long(asof):
+    try:
+        return _dt.date.fromisoformat(str(asof)[:10]).strftime("%B %-d %Y")
+    except Exception:
+        return str(asof)
+
+
+def _nonneg_head():
+    return sum(r[1] for r in D.PURCHASE_TYPES["rows"]
+               if not r[0].lower().startswith("negotiated"))
+
+
+def _neg_gap():
+    return D.PRODUCER_ALL["value"] - D.NEGOTIATED["value"]
+
+
+def _spread_now():
+    return D.CUTOUT["value"] - D.PRODUCER_ALL["value"]
+
+
+def _spread_prior():
+    pa = D.PRODUCER_ALL
+    pp = pa["series"][-2][1] if len(pa.get("series", [])) > 1 else pa["value"]
+    return D.CUTOUT.get("prior", D.CUTOUT["value"]) - pp
+
+
+def _move_word(chg):
+    if chg > 0:
+        return "up"
+    if chg < 0:
+        return "down"
+    return "unchanged at"
+
+
+def _formula_price():
+    """Base price of the cutout-linked formula row in PURCHASE_TYPES."""
+    for label, _head, price, _note in D.PURCHASE_TYPES["rows"]:
+        if "pork mkt formula" in label or "pork market formula" in label:
+            return price
+    return D.PURCHASE_TYPES["rows"][-1][2]
 
 
 # --------------------------------------------------------------- styles
@@ -345,26 +397,34 @@ def page_one():
 
     neg = D.NEGOTIATED
     cut = D.CUTOUT
-    spread = cut["value"] - 48.76
-    spread_prior = 72.28 - 56.30
+    _pa = D.PRODUCER_ALL
+    spread = cut["value"] - _pa["value"]
+    _cut_prior = cut.get("prior", cut["value"])
+    _pa_prior = (_pa["series"][-2][1] if len(_pa.get("series", [])) > 1
+                 else _pa["value"])
+    spread_prior = _cut_prior - _pa_prior
+    _pa_chg = _pa["value"] - _pa_prior
+    _d_neg = _fmt_day(neg["asof"])
+    _d_pa = _fmt_day(_pa["asof"])
+    _d_cut = _fmt_day(cut["asof"])
     sow = D.sow_weighted_avg()
     feed_cwt = D.feed_cost_per_cwt()
 
     cards = [
         kpi_card("Negotiated base price", money(neg["value"]),
                  delta=neg["chg"], delta_txt=delta_str(neg["chg"]),
-                 cad=f"C{money(D.cad(neg['value']))}", note="/cwt &middot; Nov 4"),
+                 cad=f"C{money(D.cad(neg['value']))}", note=f"/cwt &middot; {_d_neg}"),
         kpi_card("Producer base, all types", money(D.PRODUCER_ALL["value"]),
-                 delta=-0.76, delta_txt=delta_str(-0.76),
+                 delta=_pa_chg, delta_txt=delta_str(_pa_chg),
                  cad=f"C{money(D.cad(D.PRODUCER_ALL['value']))}",
-                 note="/cwt &middot; Nov 3"),
+                 note=f"/cwt &middot; {_d_pa}"),
         kpi_card("Pork carcass cutout", money(cut["value"]),
                  delta=cut["chg"], delta_txt=delta_str(cut["chg"]),
-                 cad=f"C{money(D.cad(cut['value']))}", note="/cwt &middot; Nov 3"),
+                 cad=f"C{money(D.cad(cut['value']))}", note=f"/cwt &middot; {_d_cut}"),
         kpi_card("Packer margin proxy", money(spread),
                  delta=spread - spread_prior,
                  delta_txt=delta_str(spread - spread_prior),
-                 cad=f"C{money(D.cad(spread))}", note="/cwt &middot; Nov 3"),
+                 cad=f"C{money(D.cad(spread))}", note=f"/cwt &middot; {_d_cut}"),
         kpi_card("SEW 10-12 lb, cash", money(22.35),
                  cad=f"C{money(D.cad(22.35))}", note="per head &middot; weekly"),
         kpi_card("Sow price, wtd avg", money(sow),
@@ -403,22 +463,28 @@ def page_one():
     s.append(Paragraph(
         "The negotiated cash market has fallen apart over the past two weeks. The "
         "national negotiated base price printed "
-        f"<b>{money(neg['value'])}/cwt</b> on November 4, down "
+        f"<b>{money(neg['value'])}/cwt</b> on {_d_neg}, "
+        f"{'up' if neg['chg'] >= 0 else 'down'} "
         f"<b>{money(abs(neg['chg']))}</b> on the day and roughly <b>$25/cwt</b> "
         "below where the same series traded in mid-October. The five-day rolling "
         f"average sits at {money(neg['roll5'])}. "
-        "Critically, this collapse is <b>not</b> matched by the wider market: "
+        "Critically, the break is <b>not</b> matched by the wider market: "
         "producer-sold hogs across all purchase types still based at "
-        f"<b>{money(D.PRODUCER_ALL['value'])}/cwt</b> on November 3, and formula "
-        "hogs on November 4 based at $61.06. The negotiated print covers roughly "
-        f"<b>{D.negotiated_share_pct():.1f}%</b> of plant-delivered volume.",
+        f"<b>{money(D.PRODUCER_ALL['value'])}/cwt</b> on {_d_pa}, and formula "
+        f"hogs on {_fmt_day(D.PURCHASE_TYPES['asof'])} based at "
+        f"{money(_formula_price())}. The negotiated print covers roughly "
+        f"<b>{D.negotiated_share_pct():.1f}%</b> of plant-delivered volume on "
+        "that day.",
         ST["body"]))
     s.append(Spacer(1, 5))
     s.append(Paragraph(
-        "Meanwhile the pork cutout has held almost perfectly flat at "
-        f"<b>{money(cut['value'])}/cwt</b>. The result is a cutout-to-base spread "
-        f"of <b>{money(spread)}/cwt</b>, up from {money(spread_prior)} a day "
-        "earlier — a sharp widening of packer gross margin. On the supply "
+        f"Meanwhile the pork cutout printed <b>{money(cut['value'])}/cwt</b> on "
+        f"{_d_cut}, {_move_word(cut['chg'])} {money(abs(cut['chg']))} on the day. "
+        "The result is a cutout-to-base spread "
+        f"of <b>{money(spread)}/cwt</b>, "
+        f"{'up' if spread >= spread_prior else 'down'} from "
+        f"{money(spread_prior)} the session before — packer gross margin on the "
+        "producer-sold base. On the supply "
         "side, every market hog weight class ran 1.5-1.6% below a year ago on "
         "September 1 and the breeding herd is the smallest for that date since "
         "2013, which does not support a cash break of this size. Frozen stocks "
@@ -429,10 +495,12 @@ def page_one():
 
     s.append(callout(
         "Read this before acting on the headline number",
-        "A $41.85 negotiated base price does not mean hogs are worth $41.85. That "
-        "print came off 5,368 head — about one plant-day of spot trade — "
-        "while 212,000 head moved the same day on formula and contract terms in the "
-        "low-to-mid $60s. Thin negotiated volume plus USDA confidentiality "
+        f"A {money(neg['value'])} negotiated base price does not mean hogs are "
+        f"worth {money(neg['value'])}. That print came off "
+        f"{neg['head']:,} head — a sliver of one plant-day of spot trade — "
+        f"while {_nonneg_head():,} head moved the same day on formula and "
+        "contract terms, tens of dollars higher. Thin negotiated volume plus "
+        "USDA confidentiality "
         "suppression makes this series extremely jumpy. Use the all-purchase-type "
         "base price for valuation and the negotiated series only as a directional "
         "signal.", tone="warn"))
@@ -610,20 +678,22 @@ def page_price():
     s.append(Paragraph(
         "The blue line is what producers were paid across every purchase "
         "arrangement; the red line is the thin spot market that sets the headline. "
-        "They moved together until the final week of October, then separated by "
-        "more than $24/cwt. A divergence of that size is a market-structure event, "
-        "not a demand event.", ST["body"]))
+        "They moved together until the final week of October, then separated "
+        f"sharply; the gap stands at <b>{money(_neg_gap())}/cwt</b>. A divergence "
+        "of that size is a market-structure event, not a demand event.",
+        ST["body"]))
     s.append(Spacer(1, 9))
 
     s += section("Cutout and packer margin")
     s += chart(f"{C.OUT}/cutout_spread.png")
     s.append(Spacer(1, 5))
     s.append(Paragraph(
-        "Carcass value is flat while the hog bid is collapsing, so the entire move "
-        "has landed in packer margin. The cutout-to-base spread widened from "
-        "$15.98 to $23.67 in a single session — a 48% expansion. On a 215 lb "
-        "carcass that is roughly <b>$16.53 per head</b> of additional gross margin "
-        "captured between the hog and the box, in one day.", ST["body"]))
+        "Carcass value and the hog bid have pulled apart, so the swing lands in "
+        "packer margin. The cutout-to-base spread moved from "
+        f"{money(_spread_prior())} to <b>{money(_spread_now())}/cwt</b> on the "
+        "latest session. On a 215 lb carcass that is "
+        f"<b>{money(D.revenue_per_head(_spread_now()))} per head</b> of gross "
+        "margin between the hog and the box.", ST["body"]))
     return s
 
 
@@ -726,7 +796,7 @@ def page_thin_market():
     s = []
     s += section("How thin the negotiated market really is",
                  "Plant-delivered purchases, barrows and gilts, carcass basis, "
-                 "November 4 2026.")
+                 f"{_fmt_long(D.PURCHASE_TYPES['asof'])}.")
     s += chart(f"{C.OUT}/purchase_mix.png")
     s.append(Spacer(1, 6))
 
@@ -755,10 +825,13 @@ def page_thin_market():
         "sort loss and deductions.", ST["cap"]))
     s.append(Spacer(1, 10))
     s.append(callout(
-        "What the $24/cwt gap is worth per head",
+        f"What the {money(_neg_gap())}/cwt gap is worth per head",
         "At a 215 lb carcass, the difference between the negotiated print "
-        "($41.85) and the all-purchase-type base ($66.15) is <b>$52.25 per "
-        "head</b> — roughly C$72.37. That gap is the single most important "
+        f"({money(D.NEGOTIATED['value'])}) and the all-purchase-type base "
+        f"({money(D.PRODUCER_ALL['value'])}) is "
+        f"<b>{money(D.revenue_per_head(_neg_gap()))} per "
+        f"head</b> — roughly C{money(D.cad(D.revenue_per_head(_neg_gap())))}. "
+        "That gap is the single most important "
         "number on this page, and it is the reason the headline price should "
         "never be used on its own to value a load.", tone="warn"))
     return s
