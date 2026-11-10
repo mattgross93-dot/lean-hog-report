@@ -1,22 +1,18 @@
 {
- "REPORT_DATE": "2026-11-09",
+ "REPORT_DATE": "2026-11-10",
  "FX_USDCAD": 1.385,
  "FX_ASOF": "2026-11-05 (approx., carried forward)",
  "NEGOTIATED": {
-  "asof": "2026-11-06",
-  "src": "LM_HG203/LM_HG201",
-  "value": 46.21,
-  "prior": 41.79,
-  "chg": 4.42,
-  "low": 39.0,
-  "high": 57.0,
-  "roll5": 45.31,
-  "head": 858,
+  "asof": "2026-11-09",
+  "src": "LM_HG201",
+  "value": 49.43,
+  "prior": 46.21,
+  "chg": 3.22,
+  "low": 38.86,
+  "high": 64.04,
+  "roll5": 45.61,
+  "head": 6147,
   "series": [
-   [
-    "Nov 2",
-    56.3
-   ],
    [
     "Nov 3",
     48.76
@@ -32,6 +28,10 @@
    [
     "Nov 6",
     46.21
+   ],
+   [
+    "Nov 9",
+    49.43
    ]
   ],
   "mid_oct_ref": [
@@ -40,11 +40,11 @@
   ]
  },
  "PRODUCER_ALL": {
-  "asof": "2026-11-06",
+  "asof": "2026-11-09",
   "src": "LM_HG201",
-  "value": 64.54,
+  "value": 62.46,
   "net": null,
-  "head": 379388,
+  "head": 234349,
   "series": [
    [
     "Oct 23",
@@ -69,56 +69,52 @@
    [
     "Nov 6",
     64.54
+   ],
+   [
+    "Nov 9",
+    62.46
    ]
   ]
  },
  "PURCHASE_TYPES": {
-  "asof": "2026-11-06",
+  "asof": "2026-11-09",
   "src": "LM_HG201",
   "rows": [
    [
     "Negotiated",
-    858,
-    46.21,
+    6147,
+    49.43,
     "spot / cash"
    ],
    [
     "Other market formula",
-    30350,
-    53.0,
+    21376,
+    56.35,
     "futures / options"
    ],
    [
     "Swine or pork mkt formula",
-    227190,
-    59.42,
+    128871,
+    59.68,
     "cutout-linked"
    ],
    [
     "Other purchase arrangement",
-    169678,
-    72.1,
+    77278,
+    69.43,
     "fixed / window"
    ]
   ]
  },
  "CUTOUT": {
-  "asof": "2026-11-06",
+  "asof": "2026-11-10",
   "src": "LM_PK602",
-  "value": 70.65,
-  "prior": 68.99,
-  "chg": 1.66,
-  "loads": 342.55,
-  "loads_prior": 306.42,
+  "value": 69.52,
+  "prior": 70.81,
+  "chg": -1.29,
+  "loads": 312.45,
+  "loads_prior": null,
   "series": [
-   [
-    "Nov 2",
-    72.28
-   ],
-   [
-    "Nov 3",
-    72.43
-   ],
    [
     "Nov 4",
     69.29
@@ -130,38 +126,46 @@
    [
     "Nov 6",
     70.65
+   ],
+   [
+    "Nov 9",
+    70.81
+   ],
+   [
+    "Nov 10",
+    69.52
    ]
   ],
   "primals": [
    [
     "Loin",
-    71.77,
-    73.31
+    70.97,
+    75.49
    ],
    [
     "Butt",
-    98.57,
-    94.18
+    94.47,
+    96.32
    ],
    [
     "Picnic",
-    59.41,
-    52.99
+    56.45,
+    55.04
    ],
    [
     "Rib",
-    123.84,
-    129.02
+    127.62,
+    126.57
    ],
    [
     "Ham",
-    64.65,
-    60.98
+    65.25,
+    64.08
    ],
    [
     "Belly",
-    66.34,
-    63.76
+    63.35,
+    66.19
    ]
   ]
  },
@@ -313,29 +317,29 @@
   }
  },
  "SLAUGHTER": {
-  "asof": "2026-11-06",
+  "asof": "2026-11-10",
   "src": "SJ_LS710",
-  "today_est": 485000,
+  "today_est": 495000,
   "sat_est": 202000,
   "week_ago_est": 486000,
-  "year_ago_act": 470840,
-  "wtd_est": 2452000,
-  "wtd_prior_week": 2418000,
-  "wtd_year_ago": 2410676,
+  "year_ago_act": 456470,
+  "wtd_est": 991000,
+  "wtd_prior_week": 978000,
+  "wtd_year_ago": 947971,
   "sched_peak": [
    465110,
    "2026-11-03"
   ]
  },
  "CARCASS_WT": {
-  "asof": "2026-11-04",
+  "asof": "2026-11-09",
   "src": "LM_HG201",
-  "negotiated": 224.09,
-  "spmf": 218.53,
-  "omf": 220.51,
-  "opa": 219.7,
-  "combined": 220.06,
-  "packer_owned": 217.2
+  "negotiated": 223.07,
+  "spmf": 217.57,
+  "omf": 218.07,
+  "opa": 218.83,
+  "combined": 218.15,
+  "packer_owned": 214.08
  },
  "INVENTORY": {
   "asof": "2026-09-01",
@@ -901,6 +905,14 @@
   [
    "2026-11-06",
    70.65
+  ],
+  [
+   "2026-11-09",
+   70.81
+  ],
+  [
+   "2026-11-10",
+   69.52
   ]
  ]
 }
