@@ -14,9 +14,12 @@ import matplotlib.pyplot as plt
 from matplotlib.colors import to_rgb
 from matplotlib.patches import FancyBboxPatch
 from matplotlib.ticker import FuncFormatter
+import os
 import data as D
 
 OUT = "/home/claude/hogreport/charts"
+# Fresh containers start without this directory; savefig will not create it.
+os.makedirs(OUT, exist_ok=True)
 
 # ------------------------------------------------------------------ palette
 BLACK = "#000000"
