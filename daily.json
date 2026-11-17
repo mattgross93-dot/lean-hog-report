@@ -1,5 +1,5 @@
 {
-  "REPORT_DATE": "2026-11-16",
+  "REPORT_DATE": "2026-11-17",
   "FX_USDCAD": 1.385,
   "FX_ASOF": "2026-11-05 (approx., carried forward)",
   "NEGOTIATED": {
@@ -111,11 +111,11 @@
     ]
   },
   "CUTOUT": {
-    "asof": "2026-11-12",
-    "src": "LM_PK602",
-    "value": 69.14,
-    "prior": 69.34,
-    "chg": -0.2,
+    "asof": "2026-11-16",
+    "src": "LM_PK602. Headline cutout from the 2026-11-16 afternoon print, 71.24 (+1.69); the same session's morning print read 71.65 (+2.10). Both imply a prior afternoon cutout of 69.55 for 2026-11-13, which chains to the 2026-11-12 value of 69.14 confirmed earlier by the ThePigSite CME wire. USDA primary (AMS mnreports, MyMarketNews, esmis) was unreachable or serving stale snapshots this session, so the two prints come from one provider chain (Barchart) rather than two independent ones. LOADS AND PRIMALS BELOW ARE STILL THE 2026-11-11/12 PAIR and were not refreshed.",
+    "value": 71.24,
+    "prior": 69.55,
+    "chg": 1.69,
     "loads": 276.76,
     "loads_prior": 303.49,
     "series": [
@@ -138,6 +138,14 @@
       [
         "Nov 12",
         69.14
+      ],
+      [
+        "Nov 13",
+        69.55
+      ],
+      [
+        "Nov 16",
+        71.24
       ]
     ],
     "primals": [
@@ -548,8 +556,8 @@
     "pct_rank_note": "Managed money net short widened to 59,072 contracts, the largest in at least five years; futures open interest rose 17,159 on the week to 324,455."
   },
   "FUTURES": {
-    "asof": "2026-11-16",
-    "src": "CME settlements 2026-11-16 (FXEmpire full chain, 19:04 UTC; Dec/Feb independently confirmed by GX94 close table and Pro Farmer \"After the Bell\"; every contract change reconciled against 2026-11-13)",
+    "asof": "2026-11-17",
+    "src": "CME settlements 2026-11-17. Dec and Feb confirmed independently by the GX94 Radio closing commodity table (Dec 53.10 -2.25, Feb 58.32 -2.35) and the Farmbucks CME chain (quote stamp 13:04 CT, i.e. post-settlement); Apr and the deferred curve from Farmbucks, each reconciled to the 2026-11-16 settlement plus the published change. Feb/Apr carried to the 0.025 tick implied by that arithmetic (58.325, 65.525) rather than the 2-dp display.",
     "contracts": [
       "Dec 26 (HEZ26)",
       "Feb 27 (HEG27)",
@@ -562,22 +570,22 @@
     ],
     "latest": {
       "Dec 26": {
-        "px": 55.35,
-        "chg": -0.1,
-        "pct": -0.18,
+        "px": 53.1,
+        "chg": -2.25,
+        "pct": -4.07,
         "oi": null,
         "vol": null
       },
       "Feb 27": {
-        "px": 60.675,
-        "chg": -0.7,
-        "pct": -1.14,
+        "px": 58.325,
+        "chg": -2.35,
+        "pct": -3.87,
         "oi": null
       },
       "Apr 27": {
-        "px": 67.975,
-        "chg": -0.525,
-        "pct": -0.77,
+        "px": 65.525,
+        "chg": -2.45,
+        "pct": -3.6,
         "oi": null
       }
     },
@@ -687,6 +695,17 @@
         "Aug 27": 87.85,
         "Oct 27": 76.525,
         "Dec 27": 69.975
+      },
+      "2026-11-17": {
+        "Dec 26": 53.1,
+        "Feb 27": 58.325,
+        "Apr 27": 65.525,
+        "May 27": 72.1,
+        "Jun 27": 81.425,
+        "Jul 27": 84.55,
+        "Aug 27": 85.675,
+        "Oct 27": 74.45,
+        "Dec 27": 67.95
       }
     },
     "dec26": [
@@ -774,6 +793,11 @@
         "2026-11-16",
         55.35,
         false
+      ],
+      [
+        "2026-11-17",
+        53.1,
+        false
       ]
     ],
     "feb27": [
@@ -841,6 +865,11 @@
         "2026-11-16",
         60.675,
         false
+      ],
+      [
+        "2026-11-17",
+        58.325,
+        true
       ]
     ],
     "apr27": [
@@ -898,6 +927,11 @@
         "2026-11-16",
         67.975,
         false
+      ],
+      [
+        "2026-11-17",
+        65.525,
+        true
       ]
     ],
     "front_continuous_oct_contract": [
@@ -992,10 +1026,10 @@
     ],
     "perf": {
       "Dec 26": {
-        "1d": -0.18,
-        "1w": -0.94,
-        "ytd": -37.85,
-        "1y": -33.84
+        "1d": -4.07,
+        "1w": -4.84,
+        "ytd": -40.38,
+        "1y": -36.53
       }
     },
     "min_sessions": {
@@ -1041,11 +1075,15 @@
       [
         "2026-11-11",
         58.78
+      ],
+      [
+        "2026-11-12",
+        57.73
       ]
     ],
-    "latest": 58.78,
-    "latest_asof": "2026-11-11",
-    "note": "lowest since January 2024; 2-day publication lag"
+    "latest": 57.73,
+    "latest_asof": "2026-11-12",
+    "note": "lowest since January 2024; 2-day publication lag. 2026-11-12 value 57.73 (-1.05) reported in two CME wire write-ups and chains exactly from the 2026-11-11 reading of 58.78."
   },
   "CUTOUT_EXTRA": [
     [
@@ -1091,6 +1129,14 @@
     [
       "2026-11-12",
       69.14
+    ],
+    [
+      "2026-11-13",
+      69.55
+    ],
+    [
+      "2026-11-16",
+      71.24
     ]
   ]
 }
