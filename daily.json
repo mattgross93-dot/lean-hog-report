@@ -1,1142 +1,1185 @@
 {
-  "REPORT_DATE": "2026-11-17",
-  "FX_USDCAD": 1.385,
-  "FX_ASOF": "2026-11-05 (approx., carried forward)",
-  "NEGOTIATED": {
-    "asof": "2026-11-10",
-    "src": "LM_HG201",
-    "value": 43.25,
-    "prior": 49.43,
-    "chg": -6.18,
-    "low": 38.86,
-    "high": 64.04,
-    "roll5": 44.51,
-    "head": 3605,
-    "series": [
-      [
-        "Nov 4",
-        41.85
-      ],
-      [
-        "Nov 5",
-        41.79
-      ],
-      [
-        "Nov 6",
-        46.21
-      ],
-      [
-        "Nov 9",
-        49.43
-      ],
-      [
-        "Nov 10",
-        43.25
-      ]
-    ],
-    "mid_oct_ref": [
-      67.0,
-      72.0
-    ]
-  },
-  "PRODUCER_ALL": {
-    "asof": "2026-11-10",
-    "src": "LM_HG201",
-    "value": 62.41,
-    "net": 63.83,
-    "head": 216503,
-    "series": [
-      [
-        "Oct 23",
-        71.54
-      ],
-      [
-        "Nov 2",
-        66.91
-      ],
-      [
-        "Nov 3",
-        66.15
-      ],
-      [
-        "Nov 4",
-        66.24
-      ],
-      [
-        "Nov 5",
-        64.95
-      ],
-      [
-        "Nov 6",
-        64.54
-      ],
-      [
-        "Nov 9",
-        62.46
-      ],
-      [
-        "Nov 10",
-        62.41
-      ]
-    ]
-  },
-  "PURCHASE_TYPES": {
-    "asof": "2026-11-10",
-    "src": "LM_HG201",
-    "rows": [
-      [
-        "Negotiated",
-        3605,
-        43.25,
-        "spot / cash"
-      ],
-      [
-        "Other market formula",
-        22280,
-        57.49,
-        "futures / options"
-      ],
-      [
-        "Swine or pork mkt formula",
-        121618,
-        58.97,
-        "cutout-linked"
-      ],
-      [
-        "Other purchase arrangement",
-        67294,
-        70.94,
-        "fixed / window"
-      ]
-    ]
-  },
-  "CUTOUT": {
-    "asof": "2026-11-16",
-    "src": "LM_PK602. Headline cutout from the 2026-11-16 afternoon print, 71.24 (+1.69); the same session's morning print read 71.65 (+2.10). Both imply a prior afternoon cutout of 69.55 for 2026-11-13, which chains to the 2026-11-12 value of 69.14 confirmed earlier by the ThePigSite CME wire. USDA primary (AMS mnreports, MyMarketNews, esmis) was unreachable or serving stale snapshots this session, so the two prints come from one provider chain (Barchart) rather than two independent ones. LOADS AND PRIMALS BELOW ARE STILL THE 2026-11-11/12 PAIR and were not refreshed.",
-    "value": 71.24,
-    "prior": 69.55,
-    "chg": 1.69,
-    "loads": 276.76,
-    "loads_prior": 303.49,
-    "series": [
-      [
-        "Nov 6",
-        70.65
-      ],
-      [
-        "Nov 9",
-        70.81
-      ],
-      [
-        "Nov 10",
-        69.52
-      ],
-      [
-        "Nov 11",
-        69.34
-      ],
-      [
-        "Nov 12",
-        69.14
-      ],
-      [
-        "Nov 13",
-        69.55
-      ],
-      [
-        "Nov 16",
-        71.24
-      ]
-    ],
-    "primals": [
-      [
-        "Loin",
-        68.84,
-        69.28
-      ],
-      [
-        "Butt",
-        96.68,
-        99.79
-      ],
-      [
-        "Picnic",
-        51.93,
-        59.48
-      ],
-      [
-        "Rib",
-        120.41,
-        120.27
-      ],
-      [
-        "Ham",
-        63.99,
-        64.08
-      ],
-      [
-        "Belly",
-        68.71,
-        61.25
-      ]
-    ]
-  },
-  "BYPRODUCT": {
-    "asof": "2026-10-23",
-    "src": "AMS2810",
-    "value": 5.01,
-    "chg": -0.09
-  },
-  "SOWS": {
-    "asof": "2026-10-19",
-    "src": "LM_HG234",
-    "classes": [
-      [
-        "300-399",
-        60.73,
-        365,
-        1067,
-        30.0,
-        73.75
-      ],
-      [
-        "400-449",
-        62.78,
-        421,
-        580,
-        30.0,
-        76.69
-      ],
-      [
-        "450-499",
-        68.27,
-        475,
-        308,
-        48.0,
-        76.69
-      ],
-      [
-        "500-549",
-        71.82,
-        526,
-        1886,
-        62.12,
-        76.69
-      ],
-      [
-        "550/up",
-        72.0,
-        588,
-        667,
-        48.0,
-        76.75
-      ]
-    ],
-    "total_head": 4508,
-    "canada_origin_head": 865
-  },
-  "FEEDER_PIGS": {
-    "asof": "2026-10-23",
-    "src": "AMS2810",
-    "rows": [
-      [
-        "SEW 10-12 lb",
-        38.06,
-        22.35,
-        26.01
-      ],
-      [
-        "Feeder pig 40 lb",
-        44.9,
-        null,
-        44.9
-      ]
-    ]
-  },
-  "FEED": {
-    "asof": "2026-11-16",
-    "src": "CBOT Nov 16 settlements (Pro Farmer \"After the Bell\" + GX94 close table, corn agreeing to the quarter-cent; Nov 13 soybean meal read direct from Farmbucks and corroborated by Price Group weekly change)",
-    "corn": {
-      "value": 4.4875,
-      "prior": 4.455,
-      "contract": "Dec 26",
-      "series": [
-        [
-          "Nov 2",
-          4.4825
-        ],
-        [
-          "Nov 3",
-          4.425
-        ],
-        [
-          "Nov 4",
-          4.4425
-        ],
-        [
-          "Nov 5",
-          4.4
-        ],
-        [
-          "Nov 6",
-          4.415
-        ],
-        [
-          "Nov 9",
-          4.3925
-        ],
-        [
-          "Nov 12",
-          4.425
-        ],
-        [
-          "Nov 13",
-          4.455
-        ],
-        [
-          "Nov 16",
-          4.4875
-        ]
-      ]
-    },
-    "sbm": {
-      "value": 334.6,
-      "prior": 329.8,
-      "contract": "Dec 26",
-      "series": [
-        [
-          "Nov 2",
-          319.6
-        ],
-        [
-          "Nov 3",
-          318.0
-        ],
-        [
-          "Nov 4",
-          318.6
-        ],
-        [
-          "Nov 5",
-          317.2
-        ],
-        [
-          "Nov 6",
-          319.2
-        ],
-        [
-          "Nov 9",
-          320.7
-        ],
-        [
-          "Nov 12",
-          325.4
-        ],
-        [
-          "Nov 13",
-          329.8
-        ],
-        [
-          "Nov 16",
-          334.6
-        ]
-      ]
-    },
-    "iowa_cash_corn": {
-      "value": 4.06,
-      "asof": "2026-11-02"
-    },
-    "model": {
-      "corn_bu_per_head": 9.5,
-      "sbm_ton_per_head": 0.045,
-      "carcass_lb": 215
-    }
-  },
-  "SLAUGHTER": {
-    "asof": "2026-11-11",
-    "src": "SJ_LS710",
-    "today_est": 462000,
-    "sat_est": 202000,
-    "week_ago_est": 495000,
-    "year_ago_act": 487293,
-    "wtd_est": 1453000,
-    "wtd_prior_week": 1473000,
-    "wtd_year_ago": 1435264,
-    "sched_peak": [
-      465110,
-      "2026-11-03"
-    ]
-  },
-  "CARCASS_WT": {
-    "asof": "2026-11-09",
-    "src": "LM_HG201",
-    "negotiated": 223.07,
-    "spmf": 217.57,
-    "omf": 218.07,
-    "opa": 218.83,
-    "combined": 218.15,
-    "packer_owned": 214.08
-  },
-  "INVENTORY": {
-    "asof": "2026-09-01",
-    "src": "HOGSPIGS",
-    "released": "2026-09-24",
-    "next_release": "late December 2026",
-    "rows": [
-      [
-        "All hogs & pigs",
-        74302,
-        75438,
-        -1.5
-      ],
-      [
-        "Kept for breeding",
-        5875,
-        5936,
-        -1.0
-      ],
-      [
-        "Market hogs",
-        68427,
-        69502,
-        -1.5
-      ]
-    ],
-    "weight_classes": [
-      [
-        "Under 50 lb",
-        21866,
-        22211,
-        -1.6,
-        "Jan-Feb 2027"
-      ],
-      [
-        "50-119 lb",
-        19976,
-        20283,
-        -1.5,
-        "Dec 26-Jan 27"
-      ],
-      [
-        "120-179 lb",
-        14142,
-        14358,
-        -1.5,
-        "Nov-Dec 2026"
-      ],
-      [
-        "180 lb +",
-        12443,
-        12650,
-        -1.6,
-        "Sep-mid Oct 2026"
-      ]
-    ],
-    "notes": "Smallest September breeding herd since 2013; fewest sows farrowing since 2002."
-  },
-  "COLD_STORAGE": {
-    "asof": "2026-09-30",
-    "src": "COLDSTOR",
-    "released": "2026-10-23",
-    "next_release": "approx. 2026-11-24 (Oct 31 stocks)",
-    "total_pork": 427.8,
-    "mom_pct": -1.0,
-    "yoy_pct": 9.0,
-    "beef": 400.0,
-    "beef_mom": -1.0,
-    "beef_yoy": -1.0,
-    "series_2026": [
-      [
-        "Jun",
-        455.0
-      ],
-      [
-        "Jul",
-        439.4
-      ],
-      [
-        "Aug",
-        436.3
-      ],
-      [
-        "Sep",
-        427.8
-      ]
-    ],
-    "series_2025_derived": [
-      [
-        "Jun",
-        null
-      ],
-      [
-        "Jul",
-        404.6
-      ],
-      [
-        "Aug",
-        389.6
-      ],
-      [
-        "Sep",
-        392.5
-      ]
-    ],
-    "bellies_jul": 35.9
-  },
-  "EXPORTS": {
-    "asof": "mid-October 2026",
-    "src": "FAS",
-    "net_sales_mt": 22000,
-    "net_sales_wow_pct": 27,
-    "net_sales_vs_4wk_pct": -14,
-    "shipments_mt": 29400,
-    "shipments_wow_pct": 26,
-    "shipments_vs_4wk_pct": 13,
-    "net_sales_by_dest": [
-      [
-        "Japan",
-        6600
-      ],
-      [
-        "Mexico",
-        6200
-      ],
-      [
-        "China",
-        3000
-      ],
-      [
-        "Colombia",
-        1400
-      ],
-      [
-        "Canada",
-        1300
-      ]
-    ],
-    "shipments_by_dest": [
-      [
-        "Mexico",
-        14500
-      ],
-      [
-        "Japan",
-        4100
-      ],
-      [
-        "China",
-        2800
-      ],
-      [
-        "South Korea",
-        1900
-      ],
-      [
-        "Canada",
-        1700
-      ]
-    ],
-    "share_of_production_pct": "25-30"
-  },
-  "COT": {
-    "asof": "2026-11-03",
-    "src": "CFTC",
-    "released": "2026-11-06",
-    "next_release": "2026-11-16",
-    "mm_long": 70680,
-    "mm_short": 129752,
-    "mm_net": -59072,
-    "mm_net_prior": -51646,
-    "large_spec_net": -81035,
-    "futopt_net_reported": -50500,
-    "futopt_wow": -3400,
-    "cme_index": 63.93,
-    "cme_index_asof": "2026-11-03",
-    "contract_lb": 40000,
-    "pct_rank_note": "Managed money net short widened to 59,072 contracts, the largest in at least five years; futures open interest rose 17,159 on the week to 324,455."
-  },
-  "FUTURES": {
-    "asof": "2026-11-17",
-    "src": "CME settlements 2026-11-17. Dec and Feb confirmed independently by the GX94 Radio closing commodity table (Dec 53.10 -2.25, Feb 58.32 -2.35) and the Farmbucks CME chain (quote stamp 13:04 CT, i.e. post-settlement); Apr and the deferred curve from Farmbucks, each reconciled to the 2026-11-16 settlement plus the published change. Feb/Apr carried to the 0.025 tick implied by that arithmetic (58.325, 65.525) rather than the 2-dp display.",
-    "contracts": [
-      "Dec 26 (HEZ26)",
-      "Feb 27 (HEG27)",
-      "Apr 27 (HEJ27)"
-    ],
-    "front_weight": [
-      0.6,
-      0.25,
-      0.15
-    ],
-    "latest": {
-      "Dec 26": {
-        "px": 53.1,
-        "chg": -2.25,
-        "pct": -4.07,
-        "oi": null,
-        "vol": null
-      },
-      "Feb 27": {
-        "px": 58.325,
-        "chg": -2.35,
-        "pct": -3.87,
-        "oi": null
-      },
-      "Apr 27": {
-        "px": 65.525,
-        "chg": -2.45,
-        "pct": -3.6,
-        "oi": null
-      }
-    },
-    "curve": {
-      "2026-10-23": {
-        "Dec 26": 65.575,
-        "Feb 27": 67.625,
-        "Apr 27": 72.675,
-        "May 27": 78.575,
-        "Jun 27": 87.7,
-        "Jul 27": 90.3,
-        "Aug 27": 90.625,
-        "Oct 27": 78.075,
-        "Dec 27": 71.75
-      },
-      "2026-11-04": {
-        "Dec 26": 57.55,
-        "Feb 27": 62.3,
-        "Apr 27": 68.33,
-        "May 27": 74.95,
-        "Jun 27": 83.93,
-        "Jul 27": 87.15,
-        "Aug 27": 88.1,
-        "Oct 27": 77.35,
-        "Dec 27": 70.95
-      },
-      "2026-11-05": {
-        "Dec 26": 55.1,
-        "Feb 27": 60.18,
-        "Apr 27": 67.13,
-        "May 27": 73.98,
-        "Jun 27": 83.05
-      },
-      "2026-11-06": {
-        "Dec 26": 53.525,
-        "Feb 27": 58.7,
-        "Apr 27": 66.5,
-        "May 27": 73.93,
-        "Jun 27": 82.85,
-        "Jul 27": 85.93,
-        "Aug 27": 86.78,
-        "Oct 27": 76.28,
-        "Dec 27": 69.83
-      },
-      "2026-11-09": {
-        "Dec 26": 55.875,
-        "Feb 27": 60.825,
-        "Apr 27": 66.825,
-        "May 27": 73.225,
-        "Jun 27": 82.025,
-        "Jul 27": 85.075,
-        "Aug 27": 86.1,
-        "Oct 27": 75.575,
-        "Dec 27": 69.45
-      },
-      "2026-11-10": {
-        "Dec 26": 55.8,
-        "Feb 27": 60.75,
-        "Apr 27": 66.9,
-        "May 27": 73.575,
-        "Jun 27": 82.225,
-        "Jul 27": 85.175,
-        "Aug 27": 86.0,
-        "Oct 27": 74.95,
-        "Dec 27": 68.425
-      },
-      "2026-11-11": {
-        "Dec 26": 56.025,
-        "Feb 27": 60.525,
-        "Apr 27": 66.475,
-        "May 27": 73.075,
-        "Jun 27": 81.925,
-        "Jul 27": 84.9,
-        "Aug 27": 85.8,
-        "Oct 27": 74.875,
-        "Dec 27": 68.525
-      },
-      "2026-11-12": {
-        "Dec 26": 55.15,
-        "Feb 27": 61.0,
-        "Apr 27": 66.825,
-        "May 27": 72.925,
-        "Jun 27": 81.8,
-        "Jul 27": 84.625,
-        "Aug 27": 85.575,
-        "Oct 27": 74.75,
-        "Dec 27": 68.375
-      },
-      "2026-11-13": {
-        "Dec 26": 55.45,
-        "Feb 27": 61.375,
-        "Apr 27": 68.5,
-        "May 27": 74.875,
-        "Jun 27": 84.2,
-        "Jul 27": 86.675,
-        "Aug 27": 87.525,
-        "Oct 27": 76.325,
-        "Dec 27": 69.775
-      },
-      "2026-11-16": {
-        "Dec 26": 55.35,
-        "Feb 27": 60.675,
-        "Apr 27": 67.975,
-        "May 27": 74.675,
-        "Jun 27": 84.0,
-        "Jul 27": 86.825,
-        "Aug 27": 87.85,
-        "Oct 27": 76.525,
-        "Dec 27": 69.975
-      },
-      "2026-11-17": {
-        "Dec 26": 53.1,
-        "Feb 27": 58.325,
-        "Apr 27": 65.525,
-        "May 27": 72.1,
-        "Jun 27": 81.425,
-        "Jul 27": 84.55,
-        "Aug 27": 85.675,
-        "Oct 27": 74.45,
-        "Dec 27": 67.95
-      }
-    },
-    "dec26": [
-      [
-        "2026-09-30",
-        69.43,
-        true
-      ],
-      [
-        "2026-10-09",
-        67.825,
-        false
-      ],
-      [
-        "2026-10-12",
-        68.375,
-        true
-      ],
-      [
-        "2026-10-13",
-        68.025,
-        false
-      ],
-      [
-        "2026-10-23",
-        65.575,
-        false
-      ],
-      [
-        "2026-10-28",
-        58.6,
-        true
-      ],
-      [
-        "2026-10-29",
-        59.825,
-        false
-      ],
-      [
-        "2026-11-03",
-        58.6,
-        true
-      ],
-      [
-        "2026-11-04",
-        57.55,
-        false
-      ],
-      [
-        "2026-11-05",
-        55.1,
-        false
-      ],
-      [
-        "2026-11-06",
-        53.525,
-        false
-      ],
-      [
-        "2026-11-09",
-        55.875,
-        false
-      ],
-      [
-        "2026-11-10",
-        55.8,
-        false
-      ],
-      [
-        "2026-11-11",
-        56.025,
-        false
-      ],
-      [
-        "2026-11-12",
-        55.15,
-        false
-      ],
-      [
-        "2026-11-13",
-        55.45,
-        false
-      ],
-      [
-        "2026-11-16",
-        55.35,
-        false
-      ],
-      [
-        "2026-11-17",
-        53.1,
-        false
-      ]
-    ],
-    "feb27": [
-      [
-        "2026-10-09",
-        69.25,
-        false
-      ],
-      [
-        "2026-10-23",
-        67.625,
-        false
-      ],
-      [
-        "2026-10-29",
-        64.725,
-        false
-      ],
-      [
-        "2026-11-03",
-        63.53,
-        true
-      ],
-      [
-        "2026-11-04",
-        62.3,
-        false
-      ],
-      [
-        "2026-11-05",
-        60.18,
-        false
-      ],
-      [
-        "2026-11-06",
-        58.7,
-        false
-      ],
-      [
-        "2026-11-09",
-        60.825,
-        false
-      ],
-      [
-        "2026-11-10",
-        60.75,
-        false
-      ],
-      [
-        "2026-11-11",
-        60.525,
-        false
-      ],
-      [
-        "2026-11-12",
-        61.0,
-        false
-      ],
-      [
-        "2026-11-13",
-        61.375,
-        false
-      ],
-      [
-        "2026-11-16",
-        60.675,
-        false
-      ],
-      [
-        "2026-11-17",
-        58.325,
-        true
-      ]
-    ],
-    "apr27": [
-      [
-        "2026-10-23",
-        72.675,
-        false
-      ],
-      [
-        "2026-11-03",
-        69.38,
-        true
-      ],
-      [
-        "2026-11-04",
-        68.33,
-        false
-      ],
-      [
-        "2026-11-05",
-        67.13,
-        false
-      ],
-      [
-        "2026-11-06",
-        66.5,
-        false
-      ],
-      [
-        "2026-11-09",
-        66.825,
-        false
-      ],
-      [
-        "2026-11-10",
-        66.9,
-        false
-      ],
-      [
-        "2026-11-11",
-        66.475,
-        false
-      ],
-      [
-        "2026-11-12",
-        66.825,
-        false
-      ],
-      [
-        "2026-11-13",
-        68.5,
-        false
-      ],
-      [
-        "2026-11-16",
-        67.975,
-        false
-      ],
-      [
-        "2026-11-17",
-        65.525,
-        true
-      ]
-    ],
-    "front_continuous_oct_contract": [
-      [
-        "2026-09-10",
-        83.15
-      ],
-      [
-        "2026-09-11",
-        81.53
-      ],
-      [
-        "2026-09-14",
-        79.6
-      ],
-      [
-        "2026-09-15",
-        79.07
-      ],
-      [
-        "2026-09-16",
-        78.68
-      ],
-      [
-        "2026-09-17",
-        78.9
-      ],
-      [
-        "2026-09-18",
-        78.1
-      ],
-      [
-        "2026-09-21",
-        78.15
-      ],
-      [
-        "2026-09-22",
-        79.28
-      ],
-      [
-        "2026-09-23",
-        79.88
-      ],
-      [
-        "2026-09-24",
-        79.2
-      ],
-      [
-        "2026-09-25",
-        78.22
-      ],
-      [
-        "2026-09-28",
-        78.25
-      ],
-      [
-        "2026-09-29",
-        79.38
-      ],
-      [
-        "2026-09-30",
-        78.72
-      ],
-      [
-        "2026-10-01",
-        77.5
-      ],
-      [
-        "2026-10-02",
-        77.88
-      ],
-      [
-        "2026-10-05",
-        77.85
-      ],
-      [
-        "2026-10-06",
-        77.93
-      ],
-      [
-        "2026-10-07",
-        76.93
-      ],
-      [
-        "2026-10-08",
-        75.82
-      ],
-      [
-        "2026-10-09",
-        75.05
-      ]
-    ],
-    "perf": {
-      "Dec 26": {
-        "1d": -4.07,
-        "1w": -4.84,
-        "ytd": -40.38,
-        "1y": -36.53
-      }
-    },
-    "min_sessions": {
-      "rsi14": 30,
-      "macd": 60
-    }
-  },
-  "LH_INDEX": {
-    "src": "CME",
-    "points": [
-      [
-        "2026-10-07",
-        78.41
-      ],
-      [
-        "2026-10-28",
-        67.3
-      ],
-      [
-        "2026-10-29",
-        68.3
-      ],
-      [
-        "2026-11-02",
-        64.99
-      ],
-      [
-        "2026-11-03",
-        63.93
-      ],
-      [
-        "2026-11-04",
-        62.86
-      ],
-      [
-        "2026-11-05",
-        61.57
-      ],
-      [
-        "2026-11-06",
-        60.28
-      ],
-      [
-        "2026-11-11",
-        58.78
-      ],
-      [
-        "2026-11-12",
-        57.73
-      ]
-    ],
-    "latest": 57.73,
-    "latest_asof": "2026-11-12",
-    "note": "lowest since January 2024; 2-day publication lag. 2026-11-12 value 57.73 (-1.05) reported in two CME wire write-ups and chains exactly from the 2026-11-11 reading of 58.78."
-  },
-  "CUTOUT_EXTRA": [
-    [
-      "2026-10-13",
-      80.68
-    ],
-    [
-      "2026-10-29",
-      70.69
-    ],
-    [
-      "2026-11-02",
-      72.28
-    ],
-    [
-      "2026-11-03",
-      72.43
-    ],
-    [
-      "2026-11-04",
-      69.29
-    ],
-    [
-      "2026-11-05",
-      68.99
-    ],
-    [
-      "2026-11-06",
-      70.65
-    ],
-    [
-      "2026-11-09",
-      70.81
-    ],
-    [
-      "2026-11-10",
-      69.52
-    ],
-    [
-      "2026-11-11",
-      69.34
-    ],
-    [
-      "2026-11-12",
-      69.14
-    ],
-    [
-      "2026-11-13",
-      69.55
-    ],
-    [
-      "2026-11-16",
-      71.24
-    ]
+ "REPORT_DATE": "2026-11-18",
+ "FX_USDCAD": 1.385,
+ "FX_ASOF": "2026-11-05 (approx., carried forward)",
+ "NEGOTIATED": {
+  "asof": "2026-11-17",
+  "src": "LM_HG201 prior-day, 2026-11-17 slaughter (USDA AMS 2511 + lsddhps, agreeing). low/high are the report's Lowest/Highest Net Lot, the only dispersion LM_HG201 publishes. roll5 is the mean of the five most recent PUBLISHED negotiated base prices held here (Nov 6, 9, 10, 16, 17 = 43.54); Nov 11-13 were never captured by earlier runs, so this spans Nov 6-17 rather than five consecutive sessions.",
+  "value": 38.75,
+  "prior": 40.04,
+  "chg": -1.29,
+  "low": 34.7,
+  "high": 44.0,
+  "roll5": 43.54,
+  "head": 3049,
+  "series": [
+   [
+    "Nov 4",
+    41.85
+   ],
+   [
+    "Nov 5",
+    41.79
+   ],
+   [
+    "Nov 6",
+    46.21
+   ],
+   [
+    "Nov 9",
+    49.43
+   ],
+   [
+    "Nov 10",
+    43.25
+   ],
+   [
+    "Nov 16",
+    40.04
+   ],
+   [
+    "Nov 17",
+    38.75
+   ]
+  ],
+  "mid_oct_ref": [
+   67.0,
+   72.0
   ]
+ },
+ "PRODUCER_ALL": {
+  "asof": "2026-11-17",
+  "src": "LM_HG201 prior-day report published 2026-11-18, covering Tuesday 2026-11-17 slaughter. Read from the USDA AMS 2511 PDF and the USDA Daily Hog and Pork Summary (lsddhps), two separate endpoints whose producer-sold tables agree line for line. The 2026-11-16 figure (60.65 on 245,123 head) is from the lsddhps document dated 2026-11-17. An IndexBox write-up of the same report gave materially different head counts and prices and was discarded.",
+  "value": 61.12,
+  "net": 61.91,
+  "head": 239132,
+  "series": [
+   [
+    "Oct 23",
+    71.54
+   ],
+   [
+    "Nov 2",
+    66.91
+   ],
+   [
+    "Nov 3",
+    66.15
+   ],
+   [
+    "Nov 4",
+    66.24
+   ],
+   [
+    "Nov 5",
+    64.95
+   ],
+   [
+    "Nov 6",
+    64.54
+   ],
+   [
+    "Nov 9",
+    62.46
+   ],
+   [
+    "Nov 10",
+    62.41
+   ],
+   [
+    "Nov 16",
+    60.65
+   ],
+   [
+    "Nov 17",
+    61.12
+   ]
+  ]
+ },
+ "PURCHASE_TYPES": {
+  "asof": "2026-11-17",
+  "src": "LM_HG201 prior-day, 2026-11-17 slaughter (USDA AMS 2511 + lsddhps). Negotiated Formula 1,245 head, price withheld for confidentiality.",
+  "rows": [
+   [
+    "Negotiated",
+    3049,
+    38.75,
+    "spot / cash"
+   ],
+   [
+    "Other market formula",
+    25192,
+    61.33,
+    "futures / options"
+   ],
+   [
+    "Swine or pork mkt formula",
+    132969,
+    56.47,
+    "cutout-linked"
+   ],
+   [
+    "Other purchase arrangement",
+    76677,
+    69.55,
+    "fixed / window"
+   ]
+  ]
+ },
+ "CUTOUT": {
+  "asof": "2026-11-18",
+  "src": "LM_PK602 afternoon (FOB plant). 2026-11-18 PM cutout 69.48 (+1.04) read from the USDA AMS 2498 afternoon PDF (header 'November 18, 2026, Afternoon') and independently from the USDA Daily Hog and Pork Summary (lsddhps) carrying the same report date, which print the same value, loads and primals. The +1.04 change chains exactly to the 2026-11-17 PM cutout of 68.44, which is itself from the USDA Daily Hog and Pork Summary dated 2026-11-17; that in turn chains (-2.80) to 71.24 for 2026-11-16, now independently confirmed by a Barchart close report for that session. All six primals chain exactly between the 11-17 and 11-18 documents. Note: a ThePigSite CME wire printed the 11-17 cutout as 66.44, two dollars below the USDA document and inconsistent with both neighbouring sessions; treated as a wire error.",
+  "value": 69.48,
+  "prior": 68.44,
+  "chg": 1.04,
+  "loads": 253.42,
+  "loads_prior": 300.76,
+  "series": [
+   [
+    "Nov 6",
+    70.65
+   ],
+   [
+    "Nov 9",
+    70.81
+   ],
+   [
+    "Nov 10",
+    69.52
+   ],
+   [
+    "Nov 11",
+    69.34
+   ],
+   [
+    "Nov 12",
+    69.14
+   ],
+   [
+    "Nov 13",
+    69.55
+   ],
+   [
+    "Nov 16",
+    71.24
+   ],
+   [
+    "Nov 17",
+    68.44
+   ],
+   [
+    "Nov 18",
+    69.48
+   ]
+  ],
+  "primals": [
+   [
+    "Loin",
+    68.4,
+    66.96
+   ],
+   [
+    "Butt",
+    97.19,
+    95.4
+   ],
+   [
+    "Picnic",
+    56.99,
+    57.47
+   ],
+   [
+    "Rib",
+    127.58,
+    124.32
+   ],
+   [
+    "Ham",
+    62.9,
+    63.84
+   ],
+   [
+    "Belly",
+    66.48,
+    64.16
+   ]
+  ]
+ },
+ "BYPRODUCT": {
+  "asof": "2026-10-23",
+  "src": "AMS2810",
+  "value": 5.01,
+  "chg": -0.09
+ },
+ "SOWS": {
+  "asof": "2026-10-19",
+  "src": "LM_HG234",
+  "classes": [
+   [
+    "300-399",
+    60.73,
+    365,
+    1067,
+    30.0,
+    73.75
+   ],
+   [
+    "400-449",
+    62.78,
+    421,
+    580,
+    30.0,
+    76.69
+   ],
+   [
+    "450-499",
+    68.27,
+    475,
+    308,
+    48.0,
+    76.69
+   ],
+   [
+    "500-549",
+    71.82,
+    526,
+    1886,
+    62.12,
+    76.69
+   ],
+   [
+    "550/up",
+    72.0,
+    588,
+    667,
+    48.0,
+    76.75
+   ]
+  ],
+  "total_head": 4508,
+  "canada_origin_head": 865
+ },
+ "FEEDER_PIGS": {
+  "asof": "2026-10-23",
+  "src": "AMS2810",
+  "rows": [
+   [
+    "SEW 10-12 lb",
+    38.06,
+    22.35,
+    26.01
+   ],
+   [
+    "Feeder pig 40 lb",
+    44.9,
+    null,
+    44.9
+   ]
+  ]
+ },
+ "FEED": {
+  "asof": "2026-11-16",
+  "src": "CBOT Nov 16 settlements (Pro Farmer \"After the Bell\" + GX94 close table, corn agreeing to the quarter-cent; Nov 13 soybean meal read direct from Farmbucks and corroborated by Price Group weekly change)",
+  "corn": {
+   "value": 4.4875,
+   "prior": 4.455,
+   "contract": "Dec 26",
+   "series": [
+    [
+     "Nov 2",
+     4.4825
+    ],
+    [
+     "Nov 3",
+     4.425
+    ],
+    [
+     "Nov 4",
+     4.4425
+    ],
+    [
+     "Nov 5",
+     4.4
+    ],
+    [
+     "Nov 6",
+     4.415
+    ],
+    [
+     "Nov 9",
+     4.3925
+    ],
+    [
+     "Nov 12",
+     4.425
+    ],
+    [
+     "Nov 13",
+     4.455
+    ],
+    [
+     "Nov 16",
+     4.4875
+    ]
+   ]
+  },
+  "sbm": {
+   "value": 334.6,
+   "prior": 329.8,
+   "contract": "Dec 26",
+   "series": [
+    [
+     "Nov 2",
+     319.6
+    ],
+    [
+     "Nov 3",
+     318.0
+    ],
+    [
+     "Nov 4",
+     318.6
+    ],
+    [
+     "Nov 5",
+     317.2
+    ],
+    [
+     "Nov 6",
+     319.2
+    ],
+    [
+     "Nov 9",
+     320.7
+    ],
+    [
+     "Nov 12",
+     325.4
+    ],
+    [
+     "Nov 13",
+     329.8
+    ],
+    [
+     "Nov 16",
+     334.6
+    ]
+   ]
+  },
+  "iowa_cash_corn": {
+   "value": 4.06,
+   "asof": "2026-11-02"
+  },
+  "model": {
+   "corn_bu_per_head": 9.5,
+   "sbm_ton_per_head": 0.045,
+   "carcass_lb": 215
+  }
+ },
+ "SLAUGHTER": {
+  "asof": "2026-11-18",
+  "src": "SJ_LS710 via USDA Daily Hog and Pork Summary dated 2026-11-18. sat_est NOT refreshed: the 2026-11-18 report carries no Saturday estimate, so the prior week's 202,000 is retained.",
+  "today_est": 495000,
+  "sat_est": 202000,
+  "week_ago_est": 440000,
+  "year_ago_act": 494178,
+  "wtd_est": 1480000,
+  "wtd_prior_week": 1431000,
+  "wtd_year_ago": 1483127,
+  "sched_peak": [
+   465110,
+   "2026-11-03"
+  ]
+ },
+ "CARCASS_WT": {
+  "asof": "2026-11-17",
+  "src": "LM_HG201 average carcass weights, 2026-11-17 slaughter (USDA AMS 2511)",
+  "negotiated": 224.61,
+  "spmf": 218.42,
+  "omf": 214.41,
+  "opa": 219.48,
+  "combined": 218.46,
+  "packer_owned": 215.41
+ },
+ "INVENTORY": {
+  "asof": "2026-09-01",
+  "src": "HOGSPIGS",
+  "released": "2026-09-24",
+  "next_release": "late December 2026",
+  "rows": [
+   [
+    "All hogs & pigs",
+    74302,
+    75438,
+    -1.5
+   ],
+   [
+    "Kept for breeding",
+    5875,
+    5936,
+    -1.0
+   ],
+   [
+    "Market hogs",
+    68427,
+    69502,
+    -1.5
+   ]
+  ],
+  "weight_classes": [
+   [
+    "Under 50 lb",
+    21866,
+    22211,
+    -1.6,
+    "Jan-Feb 2027"
+   ],
+   [
+    "50-119 lb",
+    19976,
+    20283,
+    -1.5,
+    "Dec 26-Jan 27"
+   ],
+   [
+    "120-179 lb",
+    14142,
+    14358,
+    -1.5,
+    "Nov-Dec 2026"
+   ],
+   [
+    "180 lb +",
+    12443,
+    12650,
+    -1.6,
+    "Sep-mid Oct 2026"
+   ]
+  ],
+  "notes": "Smallest September breeding herd since 2013; fewest sows farrowing since 2002."
+ },
+ "COLD_STORAGE": {
+  "asof": "2026-09-30",
+  "src": "COLDSTOR",
+  "released": "2026-10-23",
+  "next_release": "approx. 2026-11-24 (Oct 31 stocks)",
+  "total_pork": 427.8,
+  "mom_pct": -1.0,
+  "yoy_pct": 9.0,
+  "beef": 400.0,
+  "beef_mom": -1.0,
+  "beef_yoy": -1.0,
+  "series_2026": [
+   [
+    "Jun",
+    455.0
+   ],
+   [
+    "Jul",
+    439.4
+   ],
+   [
+    "Aug",
+    436.3
+   ],
+   [
+    "Sep",
+    427.8
+   ]
+  ],
+  "series_2025_derived": [
+   [
+    "Jun",
+    null
+   ],
+   [
+    "Jul",
+    404.6
+   ],
+   [
+    "Aug",
+    389.6
+   ],
+   [
+    "Sep",
+    392.5
+   ]
+  ],
+  "bellies_jul": 35.9
+ },
+ "EXPORTS": {
+  "asof": "mid-October 2026",
+  "src": "FAS",
+  "net_sales_mt": 22000,
+  "net_sales_wow_pct": 27,
+  "net_sales_vs_4wk_pct": -14,
+  "shipments_mt": 29400,
+  "shipments_wow_pct": 26,
+  "shipments_vs_4wk_pct": 13,
+  "net_sales_by_dest": [
+   [
+    "Japan",
+    6600
+   ],
+   [
+    "Mexico",
+    6200
+   ],
+   [
+    "China",
+    3000
+   ],
+   [
+    "Colombia",
+    1400
+   ],
+   [
+    "Canada",
+    1300
+   ]
+  ],
+  "shipments_by_dest": [
+   [
+    "Mexico",
+    14500
+   ],
+   [
+    "Japan",
+    4100
+   ],
+   [
+    "China",
+    2800
+   ],
+   [
+    "South Korea",
+    1900
+   ],
+   [
+    "Canada",
+    1700
+   ]
+  ],
+  "share_of_production_pct": "25-30"
+ },
+ "COT": {
+  "asof": "2026-11-10",
+  "src": "CFTC",
+  "released": "2026-11-16",
+  "next_release": "2026-11-20",
+  "mm_long": 77046,
+  "mm_short": 139282,
+  "mm_net": -62236,
+  "mm_net_prior": -59072,
+  "large_spec_net": -81607,
+  "futopt_net_reported": -51084,
+  "futopt_wow": -592,
+  "cme_index": 63.93,
+  "cme_index_asof": "2026-11-03",
+  "contract_lb": 40000,
+  "pct_rank_note": "Managed money net short (futures only) widened to 62,236 contracts from 59,072, a fifth straight weekly build and the largest in the disaggregated series. On a futures-and-options basis the net short is 51,084, which one COT analysis calls the largest since the series began in June 2006. Futures open interest 311,751; futures-and-options open interest 481,857, up 4,754 on the week. Release was pushed from Friday 2026-11-13 to Monday 2026-11-16 by a federal holiday. cme_index below is still the 2026-11-03 reading and carries its own date."
+ },
+ "FUTURES": {
+  "asof": "2026-11-18",
+  "src": "Dec 26 is the 2026-11-18 CME settlement: 51.35, -1.75, from Pro Farmer 'After the Bell' dated 2026-11-18, chaining exactly to the 2026-11-17 settlement of 53.10 that four independent sources agreed on (ThePigSite CME wire, FXEmpire, Farmbucks, GX94). A new contract low. Feb 27 and Apr 27 could NOT be refreshed for 2026-11-18: every reachable quote chain (FXEmpire, Farmbucks, National Hog Farmer, TradingView) was still stamped 2026-11-17 or older, Barchart/CME render by script, and Brownfield/GX94 refused the fetch. Their entries under 'latest' are therefore still the 2026-11-17 settlements and are NOT today's; they are not rendered in the PDF and feed nothing but the unused ov= override. Only dec26 was appended; feb27/apr27 were deliberately left unpadded. The 'curve' block has no 2026-11-18 snapshot for the same reason.",
+  "contracts": [
+   "Dec 26 (HEZ26)",
+   "Feb 27 (HEG27)",
+   "Apr 27 (HEJ27)"
+  ],
+  "front_weight": [
+   0.6,
+   0.25,
+   0.15
+  ],
+  "latest": {
+   "Dec 26": {
+    "px": 51.35,
+    "chg": -1.75,
+    "pct": -3.3,
+    "oi": null,
+    "vol": null
+   },
+   "Feb 27": {
+    "px": 58.325,
+    "chg": null,
+    "pct": null,
+    "oi": null,
+    "stale_asof": "2026-11-17"
+   },
+   "Apr 27": {
+    "px": 65.525,
+    "chg": null,
+    "pct": null,
+    "oi": null,
+    "stale_asof": "2026-11-17"
+   }
+  },
+  "curve": {
+   "2026-10-23": {
+    "Dec 26": 65.575,
+    "Feb 27": 67.625,
+    "Apr 27": 72.675,
+    "May 27": 78.575,
+    "Jun 27": 87.7,
+    "Jul 27": 90.3,
+    "Aug 27": 90.625,
+    "Oct 27": 78.075,
+    "Dec 27": 71.75
+   },
+   "2026-11-04": {
+    "Dec 26": 57.55,
+    "Feb 27": 62.3,
+    "Apr 27": 68.33,
+    "May 27": 74.95,
+    "Jun 27": 83.93,
+    "Jul 27": 87.15,
+    "Aug 27": 88.1,
+    "Oct 27": 77.35,
+    "Dec 27": 70.95
+   },
+   "2026-11-05": {
+    "Dec 26": 55.1,
+    "Feb 27": 60.18,
+    "Apr 27": 67.13,
+    "May 27": 73.98,
+    "Jun 27": 83.05
+   },
+   "2026-11-06": {
+    "Dec 26": 53.525,
+    "Feb 27": 58.7,
+    "Apr 27": 66.5,
+    "May 27": 73.93,
+    "Jun 27": 82.85,
+    "Jul 27": 85.93,
+    "Aug 27": 86.78,
+    "Oct 27": 76.28,
+    "Dec 27": 69.83
+   },
+   "2026-11-09": {
+    "Dec 26": 55.875,
+    "Feb 27": 60.825,
+    "Apr 27": 66.825,
+    "May 27": 73.225,
+    "Jun 27": 82.025,
+    "Jul 27": 85.075,
+    "Aug 27": 86.1,
+    "Oct 27": 75.575,
+    "Dec 27": 69.45
+   },
+   "2026-11-10": {
+    "Dec 26": 55.8,
+    "Feb 27": 60.75,
+    "Apr 27": 66.9,
+    "May 27": 73.575,
+    "Jun 27": 82.225,
+    "Jul 27": 85.175,
+    "Aug 27": 86.0,
+    "Oct 27": 74.95,
+    "Dec 27": 68.425
+   },
+   "2026-11-11": {
+    "Dec 26": 56.025,
+    "Feb 27": 60.525,
+    "Apr 27": 66.475,
+    "May 27": 73.075,
+    "Jun 27": 81.925,
+    "Jul 27": 84.9,
+    "Aug 27": 85.8,
+    "Oct 27": 74.875,
+    "Dec 27": 68.525
+   },
+   "2026-11-12": {
+    "Dec 26": 55.15,
+    "Feb 27": 61.0,
+    "Apr 27": 66.825,
+    "May 27": 72.925,
+    "Jun 27": 81.8,
+    "Jul 27": 84.625,
+    "Aug 27": 85.575,
+    "Oct 27": 74.75,
+    "Dec 27": 68.375
+   },
+   "2026-11-13": {
+    "Dec 26": 55.45,
+    "Feb 27": 61.375,
+    "Apr 27": 68.5,
+    "May 27": 74.875,
+    "Jun 27": 84.2,
+    "Jul 27": 86.675,
+    "Aug 27": 87.525,
+    "Oct 27": 76.325,
+    "Dec 27": 69.775
+   },
+   "2026-11-16": {
+    "Dec 26": 55.35,
+    "Feb 27": 60.675,
+    "Apr 27": 67.975,
+    "May 27": 74.675,
+    "Jun 27": 84.0,
+    "Jul 27": 86.825,
+    "Aug 27": 87.85,
+    "Oct 27": 76.525,
+    "Dec 27": 69.975
+   },
+   "2026-11-17": {
+    "Dec 26": 53.1,
+    "Feb 27": 58.325,
+    "Apr 27": 65.525,
+    "May 27": 72.1,
+    "Jun 27": 81.425,
+    "Jul 27": 84.55,
+    "Aug 27": 85.675,
+    "Oct 27": 74.45,
+    "Dec 27": 67.95
+   }
+  },
+  "dec26": [
+   [
+    "2026-09-30",
+    69.43,
+    true
+   ],
+   [
+    "2026-10-09",
+    67.825,
+    false
+   ],
+   [
+    "2026-10-12",
+    68.375,
+    true
+   ],
+   [
+    "2026-10-13",
+    68.025,
+    false
+   ],
+   [
+    "2026-10-23",
+    65.575,
+    false
+   ],
+   [
+    "2026-10-28",
+    58.6,
+    true
+   ],
+   [
+    "2026-10-29",
+    59.825,
+    false
+   ],
+   [
+    "2026-11-03",
+    58.6,
+    true
+   ],
+   [
+    "2026-11-04",
+    57.55,
+    false
+   ],
+   [
+    "2026-11-05",
+    55.1,
+    false
+   ],
+   [
+    "2026-11-06",
+    53.525,
+    false
+   ],
+   [
+    "2026-11-09",
+    55.875,
+    false
+   ],
+   [
+    "2026-11-10",
+    55.8,
+    false
+   ],
+   [
+    "2026-11-11",
+    56.025,
+    false
+   ],
+   [
+    "2026-11-12",
+    55.15,
+    false
+   ],
+   [
+    "2026-11-13",
+    55.45,
+    false
+   ],
+   [
+    "2026-11-16",
+    55.35,
+    false
+   ],
+   [
+    "2026-11-17",
+    53.1,
+    false
+   ],
+   [
+    "2026-11-18",
+    51.35,
+    false
+   ]
+  ],
+  "feb27": [
+   [
+    "2026-10-09",
+    69.25,
+    false
+   ],
+   [
+    "2026-10-23",
+    67.625,
+    false
+   ],
+   [
+    "2026-10-29",
+    64.725,
+    false
+   ],
+   [
+    "2026-11-03",
+    63.53,
+    true
+   ],
+   [
+    "2026-11-04",
+    62.3,
+    false
+   ],
+   [
+    "2026-11-05",
+    60.18,
+    false
+   ],
+   [
+    "2026-11-06",
+    58.7,
+    false
+   ],
+   [
+    "2026-11-09",
+    60.825,
+    false
+   ],
+   [
+    "2026-11-10",
+    60.75,
+    false
+   ],
+   [
+    "2026-11-11",
+    60.525,
+    false
+   ],
+   [
+    "2026-11-12",
+    61.0,
+    false
+   ],
+   [
+    "2026-11-13",
+    61.375,
+    false
+   ],
+   [
+    "2026-11-16",
+    60.675,
+    false
+   ],
+   [
+    "2026-11-17",
+    58.325,
+    true
+   ]
+  ],
+  "apr27": [
+   [
+    "2026-10-23",
+    72.675,
+    false
+   ],
+   [
+    "2026-11-03",
+    69.38,
+    true
+   ],
+   [
+    "2026-11-04",
+    68.33,
+    false
+   ],
+   [
+    "2026-11-05",
+    67.13,
+    false
+   ],
+   [
+    "2026-11-06",
+    66.5,
+    false
+   ],
+   [
+    "2026-11-09",
+    66.825,
+    false
+   ],
+   [
+    "2026-11-10",
+    66.9,
+    false
+   ],
+   [
+    "2026-11-11",
+    66.475,
+    false
+   ],
+   [
+    "2026-11-12",
+    66.825,
+    false
+   ],
+   [
+    "2026-11-13",
+    68.5,
+    false
+   ],
+   [
+    "2026-11-16",
+    67.975,
+    false
+   ],
+   [
+    "2026-11-17",
+    65.525,
+    true
+   ]
+  ],
+  "front_continuous_oct_contract": [
+   [
+    "2026-09-10",
+    83.15
+   ],
+   [
+    "2026-09-11",
+    81.53
+   ],
+   [
+    "2026-09-14",
+    79.6
+   ],
+   [
+    "2026-09-15",
+    79.07
+   ],
+   [
+    "2026-09-16",
+    78.68
+   ],
+   [
+    "2026-09-17",
+    78.9
+   ],
+   [
+    "2026-09-18",
+    78.1
+   ],
+   [
+    "2026-09-21",
+    78.15
+   ],
+   [
+    "2026-09-22",
+    79.28
+   ],
+   [
+    "2026-09-23",
+    79.88
+   ],
+   [
+    "2026-09-24",
+    79.2
+   ],
+   [
+    "2026-09-25",
+    78.22
+   ],
+   [
+    "2026-09-28",
+    78.25
+   ],
+   [
+    "2026-09-29",
+    79.38
+   ],
+   [
+    "2026-09-30",
+    78.72
+   ],
+   [
+    "2026-10-01",
+    77.5
+   ],
+   [
+    "2026-10-02",
+    77.88
+   ],
+   [
+    "2026-10-05",
+    77.85
+   ],
+   [
+    "2026-10-06",
+    77.93
+   ],
+   [
+    "2026-10-07",
+    76.93
+   ],
+   [
+    "2026-10-08",
+    75.82
+   ],
+   [
+    "2026-10-09",
+    75.05
+   ]
+  ],
+  "perf": {
+   "Dec 26": {
+    "1d": -3.3,
+    "1w": -8.34,
+    "ytd": -40.38,
+    "1y": -36.53
+   }
+  },
+  "min_sessions": {
+   "rsi14": 30,
+   "macd": 60
+  }
+ },
+ "LH_INDEX": {
+  "src": "CME",
+  "points": [
+   [
+    "2026-10-07",
+    78.41
+   ],
+   [
+    "2026-10-28",
+    67.3
+   ],
+   [
+    "2026-10-29",
+    68.3
+   ],
+   [
+    "2026-11-02",
+    64.99
+   ],
+   [
+    "2026-11-03",
+    63.93
+   ],
+   [
+    "2026-11-04",
+    62.86
+   ],
+   [
+    "2026-11-05",
+    61.57
+   ],
+   [
+    "2026-11-06",
+    60.28
+   ],
+   [
+    "2026-11-11",
+    58.78
+   ],
+   [
+    "2026-11-12",
+    57.73
+   ],
+   [
+    "2026-11-13",
+    57.16
+   ]
+  ],
+  "latest": 57.16,
+  "latest_asof": "2026-11-13",
+  "note": "Value 57.16 published in the ThePigSite CME wire covering the 2026-11-17 session. The wire did not print the index's own date; 2026-11-13 is DERIVED from the standard two-business-day publication lag, which was validated against two further articles from the same chain (a 2026-11-16 session piece quoting the 2026-11-12 index at 57.73, matching this file, and a 2025 piece showing the same offset). Date is inferred, not published - the gate flags this series stale either way. Lowest since January 2024."
+ },
+ "CUTOUT_EXTRA": [
+  [
+   "2026-10-13",
+   80.68
+  ],
+  [
+   "2026-10-29",
+   70.69
+  ],
+  [
+   "2026-11-02",
+   72.28
+  ],
+  [
+   "2026-11-03",
+   72.43
+  ],
+  [
+   "2026-11-04",
+   69.29
+  ],
+  [
+   "2026-11-05",
+   68.99
+  ],
+  [
+   "2026-11-06",
+   70.65
+  ],
+  [
+   "2026-11-09",
+   70.81
+  ],
+  [
+   "2026-11-10",
+   69.52
+  ],
+  [
+   "2026-11-11",
+   69.34
+  ],
+  [
+   "2026-11-12",
+   69.14
+  ],
+  [
+   "2026-11-13",
+   69.55
+  ],
+  [
+   "2026-11-16",
+   71.24
+  ],
+  [
+   "2026-11-17",
+   68.44
+  ],
+  [
+   "2026-11-18",
+   69.48
+  ]
+ ]
 }
