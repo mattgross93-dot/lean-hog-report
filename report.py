@@ -616,8 +616,9 @@ def page_pi():
         "data its weight is redistributed inside its own block and the loss of "
         "confidence is reported. RSI and MACD are fully implemented and "
         "validated against reference series, but need 30 and 60 sessions "
-        "respectively; only 10 dated December sessions could be verified, so "
-        "both are currently inactive and the technical block runs at 30% data.",
+        f"respectively; only {len(D.FUTURES['dec26'])} dated December sessions "
+        "could be verified, so both are currently inactive and the technical "
+        "block runs at 30% data.",
         "<b>What PI is not.</b> Until there is enough history to backtest "
         "against, PI is a structured opinion rather than a validated model. Its "
         "value is that it is explicit, consistent and auditable - the table "
