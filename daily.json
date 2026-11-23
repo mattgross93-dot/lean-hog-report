@@ -1,10 +1,10 @@
 {
- "REPORT_DATE": "2026-11-20",
+ "REPORT_DATE": "2026-11-23",
  "FX_USDCAD": 1.432,
  "FX_ASOF": "2026-11-18 (USD/CAD 1.4327 intraday high / ~1.4320 quoted, FXStreet via Mitrade; corroborated by Trading Economics 2026-11-16 'touched 1.43'. No 2026-11-20 close obtainable; dated honestly at 2026-11-18, not carried forward to today. Replaces a 1.385 figure dated 2026-11-05.)",
  "NEGOTIATED": {
   "asof": "2026-11-18",
-  "src": "LM_HG201 National Daily Direct Hog Prior Day report published 2026-11-19, covering the Wednesday 2026-11-18 slaughter. Read from the PRIMARY source: the USDA AMS 'National Daily Hog and Pork Summary' PDF printing 'Nov 19, 2026 ... Des Moines, Iowa Thu' (AMS 2511/LM_HG201 block), via the Barchart S3 mirror of the AMS file. This settles the figure that last session's run could not corroborate: an aggregator had rendered this same report with a national change of -0.81, which the primary document contradicts (producer base moved 61.12 -> 60.04, i.e. -1.08). The aggregator was wrong and has been discarded. The 2026-11-20-published prior-day report (2026-11-19 slaughter) could NOT be obtained: the AMS mnreports ams_2511.pdf endpoint was serving a STALE file printed 'October 23, 2026' covering the 2026-10-22 slaughter, and the correctly-dated 2026-11-20 mirror was not retrievable this session. Nothing was carried forward under today's date. Negotiated base 36.70 on 2,863 head; net 36.34. roll5 is the mean of the five most recent PUBLISHED negotiated base prices held here (Nov 9 49.43, Nov 10 43.25, Nov 16 40.04, Nov 17 38.75, Nov 18 36.70 = 41.63); Nov 11-13 were never captured by earlier runs, so this spans Nov 9-18 rather than five consecutive sessions. IMPORTANT CAVEAT: low/high are NOT 2026-11-18 figures. The Nov 19 summary document does not print LM_HG201's Lowest/Highest Net Lot, so the 34.70/44.00 range shown is still the 2026-11-17 dispersion and should be read as such. Reported but deliberately excluded from PI.",
+  "src": "LM_HG201 National Daily Direct Hog Prior Day report published 2026-11-19, covering the Wednesday 2026-11-18 slaughter, read from the PRIMARY USDA AMS 'National Daily Hog and Pork Summary' (printed header 'Nov 19, 2026 ... Des Moines, Iowa Thu'). Negotiated base 36.70 on 2,863 head; net 36.34. roll5 41.63 is the mean of the five most recent PUBLISHED negotiated base prices held here (Nov 9 49.43, Nov 10 43.25, Nov 16 40.04, Nov 17 38.75, Nov 18 36.70); Nov 11-13 were never captured, so it spans Nov 9-18 rather than five consecutive sessions. low/high are NOT 2026-11-18 figures - the Nov 19 summary does not print LM_HG201's Lowest/Highest Net Lot, so 34.70/44.00 is still the 2026-11-17 dispersion. Reported but deliberately excluded from PI. || 2026-11-23 RUN: WHY THE 2026-11-20 FIGURES WERE NOT WRITTEN: the LM_HG201 prior-day report released 2026-11-23 (covering the 2026-11-20 and 2026-11-21 slaughter) WAS obtained this session, but only through a single commercial aggregator's rendering, and that rendering FAILS an internal consistency test that the real report passes. Its per-type base prices (negotiated 36.61, other market formula 56.80, swine/pork market formula 54.91, other purchase arrangement 67.36) head-weight to a combined producer base of 58.95, against the 59.14 it prints; the nets (35.69 / 60.09 / 55.91 / 68.66) head-weight to 60.25 against the 60.52 it prints. Gaps of 0.19 and 0.27. Those cannot be explained by the 337 withheld negotiated-formula head: closing them would require a negotiated-formula base of 234.4 and a net of 317.0, which are impossible. The gap is NOT normal for this report - the same reconciliation run against the PRIMARY AMS document held from 2026-10-23 closes to 0.032 on the base and 0.037 on the net. So at least one price in the Nov 20 rendering is mis-parsed and there is no way from here to tell which. The head counts and carcass weights from the same report DID verify (they reconcile exactly, and two independent renderings agree), and the carcass weights were written; the prices were not. The AMS mnreports endpoints were re-checked and were AGAIN serving stale files - lsddhps.pdf printed 'Oct 23, 2026', ams_2498.pdf 'October 26, 2026', ams_2675.pdf 'October 20, 2026'. The Barchart S3 mirror that served the primary document on previous runs could not be reached this session. Per RUNBOOK the old value and its OLD asof date are kept for the gate to grade. Nothing was carried forward under today's date. For the record, had it verified, the Nov 20 reading would have been base 36.61 on 6,228 head with net 35.69 and a net-lot range of 29.91-41.20, which would have made roll5 39.07. The NET of 35.69 is in fact double-confirmed; it is the BASE that this block's 'value' field carries and that could not be verified.",
   "value": 36.7,
   "prior": 38.75,
   "chg": -2.05,
@@ -53,7 +53,7 @@
  },
  "PRODUCER_ALL": {
   "asof": "2026-11-18",
-  "src": "LM_HG201 National Daily Direct Hog Prior Day report published 2026-11-19, covering the Wednesday 2026-11-18 slaughter. Read from the PRIMARY source: the USDA AMS 'National Daily Hog and Pork Summary' PDF printing 'Nov 19, 2026 ... Des Moines, Iowa Thu' (AMS 2511/LM_HG201 block), via the Barchart S3 mirror of the AMS file. This settles the figure that last session's run could not corroborate: an aggregator had rendered this same report with a national change of -0.81, which the primary document contradicts (producer base moved 61.12 -> 60.04, i.e. -1.08). The aggregator was wrong and has been discarded. The 2026-11-20-published prior-day report (2026-11-19 slaughter) could NOT be obtained: the AMS mnreports ams_2511.pdf endpoint was serving a STALE file printed 'October 23, 2026' covering the 2026-10-22 slaughter, and the correctly-dated 2026-11-20 mirror was not retrievable this session. Nothing was carried forward under today's date.",
+  "src": "LM_HG201 National Daily Direct Hog Prior Day report published 2026-11-19, covering the Wednesday 2026-11-18 slaughter, read from the PRIMARY USDA AMS 'National Daily Hog and Pork Summary' (printed header 'Nov 19, 2026 ... Des Moines, Iowa Thu'). Producer base all types 60.04, net 61.14, on 253,013 head. || 2026-11-23 RUN: WHY THE 2026-11-20 FIGURES WERE NOT WRITTEN: the LM_HG201 prior-day report released 2026-11-23 (covering the 2026-11-20 and 2026-11-21 slaughter) WAS obtained this session, but only through a single commercial aggregator's rendering, and that rendering FAILS an internal consistency test that the real report passes. Its per-type base prices (negotiated 36.61, other market formula 56.80, swine/pork market formula 54.91, other purchase arrangement 67.36) head-weight to a combined producer base of 58.95, against the 59.14 it prints; the nets (35.69 / 60.09 / 55.91 / 68.66) head-weight to 60.25 against the 60.52 it prints. Gaps of 0.19 and 0.27. Those cannot be explained by the 337 withheld negotiated-formula head: closing them would require a negotiated-formula base of 234.4 and a net of 317.0, which are impossible. The gap is NOT normal for this report - the same reconciliation run against the PRIMARY AMS document held from 2026-10-23 closes to 0.032 on the base and 0.037 on the net. So at least one price in the Nov 20 rendering is mis-parsed and there is no way from here to tell which. The head counts and carcass weights from the same report DID verify (they reconcile exactly, and two independent renderings agree), and the carcass weights were written; the prices were not. The AMS mnreports endpoints were re-checked and were AGAIN serving stale files - lsddhps.pdf printed 'Oct 23, 2026', ams_2498.pdf 'October 26, 2026', ams_2675.pdf 'October 20, 2026'. The Barchart S3 mirror that served the primary document on previous runs could not be reached this session. Per RUNBOOK the old value and its OLD asof date are kept for the gate to grade. Nothing was carried forward under today's date. For the record, had it verified, the Nov 20 reading would have been a combined producer base of 59.14 with net 60.52 on 316,645 head. This is a CORE series and it is now 5 sessions stale; the figures above are last-published, not current.",
   "value": 60.04,
   "net": 61.14,
   "head": 253013,
@@ -106,7 +106,7 @@
  },
  "PURCHASE_TYPES": {
   "asof": "2026-11-18",
-  "src": "LM_HG201 National Daily Direct Hog Prior Day report published 2026-11-19, covering the Wednesday 2026-11-18 slaughter. Read from the PRIMARY source: the USDA AMS 'National Daily Hog and Pork Summary' PDF printing 'Nov 19, 2026 ... Des Moines, Iowa Thu' (AMS 2511/LM_HG201 block), via the Barchart S3 mirror of the AMS file. This settles the figure that last session's run could not corroborate: an aggregator had rendered this same report with a national change of -0.81, which the primary document contradicts (producer base moved 61.12 -> 60.04, i.e. -1.08). The aggregator was wrong and has been discarded. The 2026-11-20-published prior-day report (2026-11-19 slaughter) could NOT be obtained: the AMS mnreports ams_2511.pdf endpoint was serving a STALE file printed 'October 23, 2026' covering the 2026-10-22 slaughter, and the correctly-dated 2026-11-20 mirror was not retrievable this session. Nothing was carried forward under today's date. Head counts 2,863 / 25,164 / 137,951 / 85,929, total producer-sold 253,013 at a 60.04 base and 61.14 net. Negotiated Formula is included in the total and is not printed as a separate column in this document, so it is not shown as its own row this session.",
+  "src": "LM_HG201 National Daily Direct Hog Prior Day report published 2026-11-19, covering the Wednesday 2026-11-18 slaughter, read from the PRIMARY USDA AMS 'National Daily Hog and Pork Summary'. Head counts 2,863 / 25,164 / 137,951 / 85,929, total producer-sold 253,013 at a 60.04 base and 61.14 net. Negotiated Formula is included in the total and is not printed as a separate column, so it is not shown as its own row. || 2026-11-23 RUN: the rows carry BASE PRICES, which is exactly what failed verification for the 2026-11-20 report. WHY THE 2026-11-20 FIGURES WERE NOT WRITTEN: the LM_HG201 prior-day report released 2026-11-23 (covering the 2026-11-20 and 2026-11-21 slaughter) WAS obtained this session, but only through a single commercial aggregator's rendering, and that rendering FAILS an internal consistency test that the real report passes. Its per-type base prices (negotiated 36.61, other market formula 56.80, swine/pork market formula 54.91, other purchase arrangement 67.36) head-weight to a combined producer base of 58.95, against the 59.14 it prints; the nets (35.69 / 60.09 / 55.91 / 68.66) head-weight to 60.25 against the 60.52 it prints. Gaps of 0.19 and 0.27. Those cannot be explained by the 337 withheld negotiated-formula head: closing them would require a negotiated-formula base of 234.4 and a net of 317.0, which are impossible. The gap is NOT normal for this report - the same reconciliation run against the PRIMARY AMS document held from 2026-10-23 closes to 0.032 on the base and 0.037 on the net. So at least one price in the Nov 20 rendering is mis-parsed and there is no way from here to tell which. The head counts and carcass weights from the same report DID verify (they reconcile exactly, and two independent renderings agree), and the carcass weights were written; the prices were not. The AMS mnreports endpoints were re-checked and were AGAIN serving stale files - lsddhps.pdf printed 'Oct 23, 2026', ams_2498.pdf 'October 26, 2026', ams_2675.pdf 'October 20, 2026'. The Barchart S3 mirror that served the primary document on previous runs could not be reached this session. Per RUNBOOK the old value and its OLD asof date are kept for the gate to grade. Nothing was carried forward under today's date. The Nov 20 head counts DID verify (6,228 / 31,737 / 171,282 / 107,061 plus 337 withheld negotiated-formula, summing exactly to the printed 316,645 producer-sold total), but head counts without trustworthy prices would make this block internally inconsistent, so the whole block is held at 2026-11-18.",
   "rows": [
    [
     "Negotiated",
@@ -136,7 +136,7 @@
  },
  "CUTOUT": {
   "asof": "2026-11-19",
-  "src": "LM_PK602 afternoon (FOB plant), 2026-11-19 PM: cutout 68.66, -0.82 from 69.48. Read from the PRIMARY source - the USDA AMS 'National Daily Hog and Pork Summary' PDF whose own printed header reads 'Nov 19, 2026 ... Des Moines, Iowa Thu' (retrieved from the Barchart S3 mirror of the AMS file, which serves the correctly-dated document, NOT the mnreports endpoint). Corroborated arithmetically: all SIX primals chain exactly off the independently confirmed 2026-11-18 values held here - Loin 68.40-2.17=66.23, Butt 97.19-1.22=95.97, Picnic 56.99+0.46=57.45, Rib 127.58+0.82=128.40, Ham 62.90-0.14=62.76, Belly 66.48-1.13=65.35 - and the cutout itself chains 69.48-0.82=68.66. Six-for-six primal reconciliation plus the headline chain is stronger corroboration than a second aggregator rendering. Total loads 239.20 (pork cuts 208.84 + trim/process 30.36). The 2026-11-20 PM cutout could NOT be obtained: the AMS mnreports endpoints were re-checked this session and were again serving STALE files - ams_2498.pdf printed 'October 26, 2026' and lsddhps.pdf printed 'Oct 23, 2026' - and no wire covering the 2026-11-20 afternoon report had published by run time (ThePigSite's latest CME wire is dated 2026-11-19 and covers Wednesday 2026-11-18). Value and asof are therefore held at 2026-11-19 rather than carried forward with today's date.",
+  "src": "LM_PK602 afternoon (FOB plant), 2026-11-19 PM: cutout 68.66, -0.82 from 69.48. Read from the PRIMARY source - the USDA AMS 'National Daily Hog and Pork Summary' whose printed header reads 'Nov 19, 2026 ... Des Moines, Iowa Thu'. Corroborated arithmetically: all SIX primals chain exactly off the independently confirmed 2026-11-18 values - Loin 68.40-2.17=66.23, Butt 97.19-1.22=95.97, Picnic 56.99+0.46=57.45, Rib 127.58+0.82=128.40, Ham 62.90-0.14=62.76, Belly 66.48-1.13=65.35 - and the cutout chains 69.48-0.82=68.66. Total loads 239.20 (pork cuts 208.84 + trim/process 30.36). || 2026-11-23 RUN: still held at 2026-11-19. A 2026-11-20 PM cutout of 67.88 WAS found, described as the lowest since August 2020, in an Ag Optimus COT piece published 2026-11-23 04:25 UTC. It is UNCORROBORATED and was NOT written in: it is a single source, no second rendering of the Nov 20 afternoon report was reachable, and unlike the Nov 19 figure there is no primal set to chain it against. That source was accurate on everything else it could be tested on this session (its Nov 20 Dec and Feb settlements match three other routes to the cent, and two of its lean-hog-index basis figures reconcile exactly), so 67.88 is probably right - but 'probably' is not the standard, and RUNBOOK is explicit that an unverified price is left for the gate to flag. It is recorded HERE, clearly labelled uncorroborated, so a later run can use it as a chain anchor if a second source turns up. The AMS mnreports endpoints were again stale (ams_2498.pdf printed 'October 26, 2026'; lsddhps.pdf 'Oct 23, 2026'), the Barchart S3 mirror was unreachable, no 2026-11-23 PM wire had published by run time, and ThePigSite's latest CME wire is still dated 2026-11-19. Separately, a weekly COMPREHENSIVE cutout of 71.04 dated 2026-11-16 was seen; that is a different series from the daily FOB-plant cutout and is not interchangeable with it. One cross-check worth noting: ThePigSite's 2026-11-18 wire printed the Nov 17 cutout as '66.44' while stating a change of -2.80 from Monday; 71.24-2.80=68.44, the value held here, so that wire has a digit transposition and the 68.44 in this file is confirmed correct.",
   "value": 68.66,
   "prior": 69.48,
   "chg": -0.82,
@@ -291,7 +291,7 @@
  },
  "FEED": {
   "asof": "2026-11-20",
-  "src": "CBOT 2026-11-20 settlements. Dec 26 corn 4.345, -0.045, CONFIRMED by TWO independent sources agreeing to the half-cent: Pro Farmer 'After the Bell' dated 2026-11-20 (\"December corn fell 4 1/2 cents to $4.34 1/2\") and the GX94 closing table of 2026-11-20 (\"CORN DEC 4.34 1/2 down 4 1/2\"). It chains exactly to the 4.39 held for 2026-11-19, and Pro Farmer's \"for the week down 11 cents\" reconciles against the 4.455 held for Nov 13. Dec 26 soybean meal 341.00, +8.70, is SINGLE-SOURCED from the same Pro Farmer piece (\"December soybean meal rose $8.70 to $341.00\"); the GX94 table carries no meal line and no second route was reachable, so it is labelled here rather than presented as cross-checked. Two independent arithmetic checks support it: it chains exactly to the 332.30 held for 2026-11-19, and the article's \"for the week up $11.20\" reconciles against the 329.80 held for Nov 13. The corn agreement validates that article for this session. Priors are the previous session's published settlements, not back-calculations. iowa_cash_corn is unchanged and carries its own 2026-11-02 date.",
+  "src": "CBOT 2026-11-20 settlements. Dec 26 corn 4.345, -0.045, CONFIRMED by TWO independent sources agreeing to the half-cent: Pro Farmer 'After the Bell' dated 2026-11-20 and the GX94 closing table of 2026-11-20 (\"CORN DEC 4.34 1/2 down 4 1/2\"). It chains exactly to the 4.39 held for 2026-11-19. Dec 26 soybean meal 341.00, +8.70, is SINGLE-SOURCED from the same Pro Farmer piece; it chains exactly to the 332.30 held for 2026-11-19 and its 'for the week up $11.20' reconciles against the 329.80 held for Nov 13. iowa_cash_corn is unchanged and carries its own 2026-11-02 date. || 2026-11-23 RUN: the block is held WHOLE at 2026-11-20 rather than split. A 2026-11-23 Dec corn close of 4.3425 ('CORN DEC 4.34 1/4 down 1/4') was obtained from the GX94 closing table published 2026-11-23 14:20 CT and chains exactly to the 4.345 held for 2026-11-20 - but NO 2026-11-23 Dec soybean meal settlement was reachable from any source tried (GX94 prints no meal line; Brownfield, DTN, Total Farm Marketing and Pro Farmer's Nov 23 pieces all failed to load). Advancing corn alone would leave this block's single asof field describing two different sessions, so corn was left one session behind with a truthful date instead. Both values above remain verified for 2026-11-20.",
   "corn": {
    "value": 4.345,
    "prior": 4.39,
@@ -406,7 +406,7 @@
  },
  "SLAUGHTER": {
   "asof": "2026-11-19",
-  "src": "AMS 3208/SJ_LS710, read from the PRIMARY USDA AMS 'National Daily Hog and Pork Summary' printing 'Nov 19, 2026 ... Des Moines, Iowa Thu' (Barchart S3 mirror of the AMS file). Thursday 2026-11-19 estimate 494,000 head; week ago 487,000; year ago actual 497,672; week-to-date 1,974,000 against 1,918,000 a week earlier and 1,980,799 a year earlier. Corroborated arithmetically: the 2026-11-18 week-to-date of 1,480,000 held here plus today's 494,000 equals 1,974,000 exactly. sat_est is NOT refreshed - no Saturday estimate has published, so the prior week's 202,000 is retained and is not a 2026-11-19 figure. No 2026-11-20 slaughter estimate was obtainable by run time.",
+  "src": "AMS 3208/SJ_LS710, read from the PRIMARY USDA AMS 'National Daily Hog and Pork Summary' printing 'Nov 19, 2026 ... Des Moines, Iowa Thu'. Thursday 2026-11-19 estimate 494,000 head; week ago 487,000; year ago actual 497,672; week-to-date 1,974,000 against 1,918,000 a week earlier and 1,980,799 a year earlier. Corroborated arithmetically: the 2026-11-18 week-to-date of 1,480,000 plus 494,000 equals 1,974,000 exactly. sat_est is NOT a 2026-11-19 figure - no Saturday estimate has published, so the prior week's 202,000 is retained. || 2026-11-23 RUN: no 2026-11-20 or 2026-11-23 daily slaughter estimate was obtainable. The AMS endpoints carrying SJ_LS710 were stale (printed Oct 20-26) and no reachable wire quoted a slaughter figure this session. sched_peak was deliberately LEFT at [465,110, 2026-11-03] even though the prior-day report released today prints a forward delivery schedule peaking at 467,282 head for 2026-11-23: writing that one field would have advanced a number inside a block whose asof must stay at 2026-11-19, which is the mislabelling this file exists to avoid. Old values and OLD asof kept for the gate to grade.",
   "today_est": 494000,
   "sat_est": 202000,
   "week_ago_est": 487000,
@@ -420,14 +420,14 @@
   ]
  },
  "CARCASS_WT": {
-  "asof": "2026-11-17",
-  "src": "LM_HG201 average carcass weights, 2026-11-17 slaughter (USDA AMS 2511) || 2026-11-19 RUN: an aggregator rendering of the LM_HG201 prior-day report published 2026-11-19 (covering the 2026-11-18 slaughter) was found, but it could NOT be corroborated. The only independent route to that report, the AMS lsddhps.pdf endpoint, was serving a stale file printed 2026-10-23. The aggregator page also contradicted itself (three head counts printed two different ways) and its stated national change of -0.81 is inconsistent with its own level against the 2026-11-17 figures held here. Per RUNBOOK, the figure is treated as unverified: the old value and its OLD asof date are kept and the gate is left to flag it. Nothing was interpolated or carried forward under today's date.",
-  "negotiated": 224.61,
-  "spmf": 218.42,
-  "omf": 214.41,
-  "opa": 219.48,
-  "combined": 218.46,
-  "packer_owned": 215.41
+  "asof": "2026-11-20",
+  "src": "LM_HG201 average carcass weights for the 2026-11-20 slaughter, from the National Daily Direct Prior Day Slaughtered Swine report released 2026-11-23. CONFIRMED by TWO INDEPENDENT RENDERINGS of that report, which agree to the hundredth on every producer purchase type: 220.41 negotiated, 221.42 other market formula, 221.56 swine/pork market formula, 222.54 other purchase arrangement, 221.88 combined producer-sold. The combined figure also reconciles ARITHMETICALLY: head-weighting the four types by the report's own head counts (6,228 / 31,737 / 171,282 / 107,061) gives 221.855 against the printed 221.88, and those head counts plus the 337 withheld negotiated-formula head sum to 316,645, exactly the printed producer-sold total. packer_owned 218.94 required adjudication: the two renderings SWAP the packer-owned and packer-sold labels (218.94 vs 222.89). The 218.94 assignment is used because it is the one that preserves the relationship in this file's own history - packer-owned ran 3.05 lb BELOW combined on 2026-11-17 (215.41 vs 218.46) and 2.94 lb below on 2026-11-20 (218.94 vs 221.88) - whereas 222.89 would put packer-owned above combined, inverting a spread that has been stable. 222.89 is independently accounted for as the packer-sold weight, which also carries the 56.10 packer-sold net. Weights rising into late November is seasonally normal and consistent with wire commentary on heavier weights adding supply. NOTE: the per-type BASE PRICES in this same report did NOT pass verification and were not written - see the NEGOTIATED and PRODUCER_ALL notes.",
+  "negotiated": 220.41,
+  "spmf": 221.56,
+  "omf": 221.42,
+  "opa": 222.54,
+  "combined": 221.88,
+  "packer_owned": 218.94
  },
  "INVENTORY": {
   "asof": "2026-09-01",
@@ -592,7 +592,7 @@
  },
  "COT": {
   "asof": "2026-11-10",
-  "src": "CFTC. || 2026-11-20 RUN: the Nov 17 positions report was due today at 15:30 ET and could NOT be retrieved. Both CFTC endpoints were fetched and were serving a CACHED release dated 10/20/26 (ag_lof.htm 'Options and Futures Combined, October 20, 2026'; deacmesf.htm 'FUTURES ONLY POSITIONS AS OF 10/20/26'). One aggregator printed a rounded Nov 17 managed-money net of -52.3K with open interest 482K 'down 192 on the week', but it gives no long/short components and no futures-only breakdown, and a rounded single-source figure is not enough to overwrite six exact fields. Per RUNBOOK the block is left at its 2026-11-10 values with its OLD asof date for the gate to grade. Nothing was carried forward under today's date.",
+  "src": "CFTC. || 2026-11-23 RUN: the 2026-11-17 positions (released 2026-11-20) are now CONFIRMED BY TWO INDEPENDENT SOURCES for the futures-and-options COMBINED series: managed money net short 52,250 contracts, 1,166 more short on the week; commercials (producer/merchant/processor/user) net short 19,513, 375 more short on the week, with gross long 67.7K and short 87.3K; total open interest 481,665, down 192 on the week, 385 traders. Ag Optimus gives the exact figures and Farmbucks independently gives the rounded equivalents (-52.3K, 'sold 1.2K on the week', -19.5K net with -375 w/w, 482K OI down 192); they agree. The managed-money net short is described as the largest in the futures-and-options combined series since it begins in June 2006, and as the fourth consecutive record. DESPITE that confirmation the block is NOT advanced and keeps its 2026-11-10 asof. The reason: mm_long, mm_short and mm_net in this block are the FUTURES-ONLY managed money figures, and mm_net is what feeds the PI positioning input and the headline 'Fund net short' card. Neither source publishes the futures-only gross long/short components - both report the combined series only, and the CFTC endpoints themselves were serving a cached release dated 10/20/26. Setting asof to 2026-11-17 while mm_long/mm_short/mm_net still held 2026-11-10 values would label a carried-forward number as current in the one field that drives PI. Old values and OLD asof kept for the gate to grade. next_release for the 2026-11-24 positions is Monday 2026-11-30 15:30 ET, holiday-delayed.",
   "released": "2026-11-16",
   "next_release": "2026-11-20",
   "mm_long": 77046,
@@ -608,8 +608,8 @@
   "pct_rank_note": "Managed money net short (futures only) widened to 62,236 contracts from 59,072, a fifth straight weekly build and the largest in the disaggregated series. On a futures-and-options basis the net short is 51,084, which one COT analysis calls the largest since the series began in June 2006. Futures open interest 311,751; futures-and-options open interest 481,857, up 4,754 on the week. Release was pushed from Friday 2026-11-13 to Monday 2026-11-16 by a federal holiday. cme_index below is still the 2026-11-03 reading and carries its own date. || 2026-11-20: positions here are still the 2026-11-10 reading. The 2026-11-17 report released today could not be obtained (CFTC served a cached 10/20/26 file)."
  },
  "FUTURES": {
-  "asof": "2026-11-20",
-  "src": "2026-11-20 CME settlements. Dec 26 52.60 (+0.175) CONFIRMED by THREE independent sources: Pro Farmer 'After the Bell' dated 2026-11-20 13:47 (\"December lean hog futures rose $0.175 to $52.60\"), the GX94 closing commodity table published 2026-11-20 14:19 (\"LEAN HOGS DEC 52.60 up 0.17\") and FXEmpire/Farmbucks contract tables (52.600, +0.1750, +0.33%). It chains exactly to the 2026-11-19 settlement of 52.425 held here, and Farmbucks independently prints 'Prev. settlement 52.43' plus a 1-week change of -5.1% from 55.45 on Nov 13, which reconciles with Pro Farmer's 'for the week down $2.85'. Feb 27 56.975 (-1.075) CONFIRMED by GX94 (\"LEAN HOGS FEB 56.97 down 1.07\"), FXEmpire (56.975, -1.075) and Farmbucks (56.98, -1.08); chains exactly to the 2026-11-19 Feb settlement of 58.05. Apr 27 64.675 (-1.575) from FXEmpire (64.675, -1.575, -2.38%) and Farmbucks (64.68, -1.58, -2.38%), which agree but may share a feed; no third route printed Apr. NOTE: Apr's published -1.575 change implies a 2026-11-19 Apr close of 66.25, but Apr was never verified for 2026-11-19 and that back-calculated close has NOT been inserted into the apr27 series - the series therefore steps from 2026-11-18 to 2026-11-20 rather than being padded. Each contract keeps its own history; no continuous front-month series was spliced. perf 1d/1w are recomputed from verified closes; ytd/1y are unchanged from the prior session and are not rendered in the report.",
+  "asof": "2026-11-23",
+  "src": "2026-11-23 CME settlements. Dec 26 52.45 (-0.15) CONFIRMED by THREE independent routes: the GX94 closing commodity table published 2026-11-23 14:20 CT, i.e. AFTER the 13:05 CT close (\"LEAN HOGS DEC 52.45 down 0.15\"), FXEmpire's contract table (52.450, -0.1500, -0.29%, vol 9,292, OI 46,130) and the Farmbucks futures chain (52.45, -0.15, OI 46,130). It chains exactly to the 2026-11-20 settlement of 52.60 held here, and Farmbucks independently prints 'Prev. settlement 52.60'. Feb 27 57.275 (+0.30) CONFIRMED by the same three routes (GX94 \"LEAN HOGS FEB 57.27 up 0.30\"; FXEmpire 57.275, +0.3000; Farmbucks 57.28, +0.30) and chains exactly to the 2026-11-20 Feb settlement of 56.975. Apr 27 64.025 (-0.65) from FXEmpire (64.025, -0.6500, -1.01%) and Farmbucks (64.03, -0.65), which agree but may share a feed; GX94 prints no April line, so there is no third route. Apr chains exactly to the 64.675 held for 2026-11-20, which is the corroboration standing in for a third source. NOTE ON SNAPSHOT TIMING: the FXEmpire/Farmbucks tables carry a 19:04 UTC (13:04 CT) stamp, one minute before the close, and are not labelled as settlements; the GX94 table published after the close agrees with them to the cent on Dec and Feb, which is what establishes these as settlement values. Each contract keeps its own history; no continuous front-month series was spliced. perf 1d/1w recomputed from verified closes (1w vs the 2026-11-16 Dec close of 55.35); ytd/1y unchanged and not rendered in the report.",
   "contracts": [
    "Dec 26 (HEZ26)",
    "Feb 27 (HEG27)",
@@ -622,25 +622,25 @@
   ],
   "latest": {
    "Dec 26": {
-    "px": 52.6,
-    "chg": 0.175,
-    "pct": 0.33,
-    "oi": 49960,
-    "vol": 10646
+    "px": 52.45,
+    "chg": -0.15,
+    "pct": -0.29,
+    "oi": 46130,
+    "vol": 9292
    },
    "Feb 27": {
-    "px": 56.975,
-    "chg": -1.075,
-    "pct": -1.85,
-    "oi": 148180,
-    "vol": 24742
+    "px": 57.275,
+    "chg": 0.3,
+    "pct": 0.53,
+    "oi": 150003,
+    "vol": 27354
    },
    "Apr 27": {
-    "px": 64.675,
-    "chg": -1.575,
-    "pct": -2.38,
-    "oi": 56589,
-    "vol": 12351
+    "px": 64.025,
+    "chg": -0.65,
+    "pct": -1.01,
+    "oi": 56930,
+    "vol": 13686
    }
   },
   "curve": {
@@ -771,6 +771,17 @@
     "Aug 27": 85.675,
     "Oct 27": 73.875,
     "Dec 27": 66.95
+   },
+   "2026-11-23": {
+    "Dec 26": 52.45,
+    "Feb 27": 57.275,
+    "Apr 27": 64.025,
+    "May 27": 71.475,
+    "Jun 27": 80.375,
+    "Jul 27": 83.525,
+    "Aug 27": 85.0,
+    "Oct 27": 73.15,
+    "Dec 27": 66.0
    }
   },
   "dec26": [
@@ -878,6 +889,11 @@
     "2026-11-20",
     52.6,
     false
+   ],
+   [
+    "2026-11-23",
+    52.45,
+    false
    ]
   ],
   "feb27": [
@@ -965,6 +981,11 @@
     "2026-11-20",
     56.975,
     false
+   ],
+   [
+    "2026-11-23",
+    57.275,
+    false
    ]
   ],
   "apr27": [
@@ -1036,6 +1057,11 @@
    [
     "2026-11-20",
     64.675,
+    false
+   ],
+   [
+    "2026-11-23",
+    64.025,
     false
    ]
   ],
@@ -1131,8 +1157,8 @@
   ],
   "perf": {
    "Dec 26": {
-    "1d": 0.33,
-    "1w": -5.14,
+    "1d": -0.29,
+    "1w": -5.24,
     "ytd": -39.13,
     "1y": -35.2
    }
@@ -1192,12 +1218,16 @@
    [
     "2026-11-16",
     56.86
+   ],
+   [
+    "2026-11-18",
+    56.32
    ]
   ],
-  "latest": 56.86,
-  "latest_asof": "2026-11-16",
-  "note": "56.86 carries an EXPLICIT publication date this session: Barchart, \"The CME Lean Hog Index was down 30 cents on November 16 at $56.86\". Corroborated by the ThePigSite CME wire dated 2026-11-19 quoting the index \"last quoted at 56.86 cents per pound, its lowest value since August 2020\", and it chains exactly (-0.30) to the 57.16 previously held. That chain also retroactively validates the earlier DERIVED dating of 57.16 to 2026-11-13 from the standard two-business-day publication lag. The 2026-11-17 index value has not published yet.",
-  "asof": "2026-11-16"
+  "latest": 56.32,
+  "latest_asof": "2026-11-18",
+  "note": "56.32 is the CME Lean Hog Index for 2026-11-18, the latest published as of the 2026-11-20 close (the index runs a two-business-day lag). Single-source on its face - an Ag Optimus COT piece published 2026-11-23 04:25 UTC - but it passes TWO independent arithmetic checks against figures verified here from other sources, which is why it is written in rather than held. The piece states the index stood $3.72 over December: 56.32 - 52.60 (the 2026-11-20 Dec settlement, independently confirmed by four sources) = 3.72 exactly. It states the comparable basis was $2.38 on 2026-11-16: 57.73 (the 2026-11-12 index held here) - 55.35 (the 2026-11-16 Dec close held here) = 2.38 exactly. Both checks reconcile to the cent against values this file already held, and the second also confirms the publication-lag convention. The 2026-11-17 index value was never published to a reachable source, so the series steps from 2026-11-16 to 2026-11-18 rather than being padded.",
+  "asof": "2026-11-18"
  },
  "CUTOUT_EXTRA": [
   [
